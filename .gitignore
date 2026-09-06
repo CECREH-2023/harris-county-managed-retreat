@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+._*
+__MACOSX/
+node_modules/
+.pytest_cache/
+*.log
+.cache/
+results/generated/
+data/external/

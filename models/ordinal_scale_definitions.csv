@@ -1,0 +1,29 @@
+variable_name,level,label,observable_criteria,reference_framework
+EngagementQualityIndex,0,None,No community engagement conducted,IAP2 Spectrum of Public Participation
+EngagementQualityIndex,1,Inform,One-way information sessions; no feedback mechanism; fact sheets and public notices only,IAP2 Spectrum of Public Participation
+EngagementQualityIndex,2,Consult,Public comment periods; structured feedback collection; surveys and open houses with documented responses,IAP2 Spectrum of Public Participation
+EngagementQualityIndex,3,Collaborate/Empower,Multi-year participatory process; community co-design of retreat plan; shared decision-making authority or community-led governance,IAP2 Spectrum of Public Participation
+RetreatVoluntarinessIndex,0,Mandatory,Compulsory acquisition or eminent domain with no opt-out; residents must relocate,Legal/policy framework
+RetreatVoluntarinessIndex,1,Incentivized,Buyout offers with financial incentives but strong administrative pressure; limited alternative support if declined,Legal/policy framework
+RetreatVoluntarinessIndex,2,Voluntary with encouragement,Voluntary buyout program with active outreach and support services; no penalty for non-participation,Legal/policy framework
+RetreatVoluntarinessIndex,3,Fully voluntary,Open enrollment with right of refusal; residents retain full autonomy; program adapts to community pace,Legal/policy framework
+EquityTargetingIndex,0,Universal/untargeted,First-come first-served with no demographic or income criteria; uniform program access,Environmental justice frameworks
+EquityTargetingIndex,1,Needs-aware,Income or vulnerability data collected; used for outreach prioritization but not resource allocation,Environmental justice frameworks
+EquityTargetingIndex,2,Needs-weighted,Explicit allocation formula weighting resources toward low-income or socially vulnerable households; tiered compensation,Environmental justice frameworks
+EquityTargetingIndex,3,Equity-first,Vulnerable populations receive first access and highest support levels; program design co-developed with affected communities; explicit anti-displacement safeguards,Environmental justice frameworks
+SupportServicesIndex,0,None,No relocation support beyond financial compensation,Service delivery models
+SupportServicesIndex,1,Financial only,Compensation payment plus basic referral information; no active case management,Service delivery models
+SupportServicesIndex,2,Financial + relocation,Compensation plus active relocation assistance: housing search support; moving logistics; school enrollment and utility transfer help,Service delivery models
+SupportServicesIndex,3,Full wraparound,Compensation plus relocation plus ongoing support: mental health counseling; job placement; community rebuilding programs; long-term follow-up,Service delivery models
+EcosystemRestorationCommitmentIndex,0,No commitment,Cleared land left vacant or sold for private redevelopment with no ecological conditions,Ecological restoration standards
+EcosystemRestorationCommitmentIndex,1,Basic stabilization,Demolition and site clearance; erosion control; invasive species management; no active restoration,Ecological restoration standards
+EcosystemRestorationCommitmentIndex,2,Active restoration,Native habitat restoration with planting and grading; stormwater management; public access where appropriate,Ecological restoration standards
+EcosystemRestorationCommitmentIndex,3,Long-term stewardship,Active restoration plus funded long-term monitoring; adaptive management plan; conservation easement or land trust transfer; ecosystem service valuation and reporting,Ecological restoration standards
+CommunityOpposition,0,No opposition,Broad community support or indifference; no organized resistance,Observed indicators
+CommunityOpposition,1,Low opposition,Scattered individual complaints; occasional negative media coverage; no organized groups,Observed indicators
+CommunityOpposition,2,Moderate opposition,Organized petition drives or comment campaigns; public protests; formal objections in administrative proceedings,Observed indicators
+CommunityOpposition,3,High opposition,Active legal challenges; sustained protest or civil disobedience; political mobilization to block program; widespread non-participation,Observed indicators
+PerceivedInequity,0,No perceived inequity,Compensation and support seen as fair across demographics; no disparities in program access or outcomes,Distributional analysis
+PerceivedInequity,1,Low perceived inequity,Minor concerns about fairness raised in public comment; no systematic disparities documented,Distributional analysis
+PerceivedInequity,2,Moderate perceived inequity,Documented disparities in compensation ratios or service access across income or racial groups; media coverage of fairness concerns,Distributional analysis
+PerceivedInequity,3,High perceived inequity,Large systematic disparities in outcomes; formal discrimination complaints or civil rights challenges; community trust breakdown along demographic lines,Distributional analysis

@@ -1,0 +1,4 @@
+equation_id,variable_name,equation_type,equation_expression,input_variables,units_check_status,test_status,owner,last_updated,notes
+EQ-001,HazardExposureIndex,stock_integration,INTEG(HazardExposureIncrease - HazardExposureDecrease, 0.35),HazardExposureIncrease|HazardExposureDecrease,pass,pending,,2026-02-19,Starter placeholder
+EQ-002,RetreatImplementationRate,auxiliary,PotentialRetreatDemand * ParticipationRate * FundingAdequacyFactor,PotentialRetreatDemand|ParticipationRate|FundingAdequacyFactor,pending,pending,,2026-02-19,Needs empirical calibration
+EQ-003,PerceivedHazardRisk,delay,SMOOTH3(ActualHazardRisk, HazardPerceptionDelay),ActualHazardRisk|HazardPerceptionDelay,pending,pending,,2026-02-19,Delay parameter from model doc

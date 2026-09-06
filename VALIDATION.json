@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-06",
+  "package": "managed-retreat",
+  "reproduction_scope": "Model design and scenario templates prepared; no calibrated executable simulator.",
+  "checks": {
+    "python_syntax": {
+      "files": 2,
+      "errors": []
+    },
+    "text_hygiene": {
+      "files": 26,
+      "findings": []
+    },
+    "relative_document_links": {
+      "broken": []
+    }
+  },
+  "scientific_checks": [
+    {
+      "check": "Empirical reproduction",
+      "status": "not applicable",
+      "scope": "Authored design or synthesis resource"
+    }
+  ],
+  "license_file_present": false
+}

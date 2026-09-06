@@ -1,0 +1,53 @@
+# Ordinal index values use integer levels 0-3
+# See models/ordinal_scale_definitions.csv for level definitions and observable criteria
+
+defaults:
+  TimeHorizonYears: 50
+  DtYears: 0.125
+  DiscountRate: 0.03
+  CompensationRate: 1.0
+  AnnualProgramFunding: 15000000
+  SupportServicesIndex: 2             # Financial + relocation
+  EquityTargetingIndex: 2             # Needs-weighted
+  EngagementQualityIndex: 2           # Consult
+  RetreatVoluntarinessIndex: 2        # Voluntary with encouragement
+  EcosystemRestorationCommitmentIndex: 2  # Active restoration
+
+scenarios:
+  SCN-001:
+    name: Status Quo Baseline
+    trigger_type: ReactiveDisaster
+    parameters:
+      AnnualProgramFunding: 0
+      SupportServicesIndex: 0          # None
+      EngagementQualityIndex: 0        # None
+      RetreatVoluntarinessIndex: 3     # Fully voluntary (no program)
+
+  SCN-002:
+    name: Reactive Retreat
+    trigger_type: ReactiveDisaster
+    parameters:
+      AnnualProgramFunding: 8000000
+      SupportServicesIndex: 1          # Financial only
+      EngagementQualityIndex: 1        # Inform
+      EcosystemRestorationCommitmentIndex: 1  # Basic stabilization
+
+  SCN-003:
+    name: Proactive Planned Retreat
+    trigger_type: ProactivePolicy
+    parameters:
+      AnnualProgramFunding: 25000000
+      SupportServicesIndex: 3          # Full wraparound
+      EquityTargetingIndex: 3          # Equity-first
+      EngagementQualityIndex: 3        # Collaborate/Empower
+      EcosystemRestorationCommitmentIndex: 2  # Active restoration
+
+  SCN-004:
+    name: Hybrid Adaptive Retreat
+    trigger_type: Hybrid
+    parameters:
+      AnnualProgramFunding: 18000000
+      SupportServicesIndex: 2          # Financial + relocation
+      EquityTargetingIndex: 2          # Needs-weighted
+      EngagementQualityIndex: 2        # Consult
+      EcosystemRestorationCommitmentIndex: 2  # Active restoration

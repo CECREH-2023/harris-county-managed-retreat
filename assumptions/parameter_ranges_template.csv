@@ -1,0 +1,6 @@
+parameter_name,description,units,baseline_value,min_value,max_value,distribution,calibration_priority,rationale,last_updated
+HazardPerceptionDelay,Delay between actual and perceived hazard risk,years,2,1,3,uniform,high,From model specification draft,2026-02-19
+PolicyImplementationDelay,Delay from policy adoption to implementation,years,3,2,5,uniform,high,Administrative process lag,2026-02-19
+CompensationRate,Compensation relative to market value,ratio,1.0,0.8,1.5,triangular,high,Scenario lever from options matrix,2026-02-19
+AnnualProgramFunding,Annual retreat program budget,USD/year,15000000,5000000,50000000,lognormal,high,Policy lever and fiscal constraint,2026-02-19
+CommunityTrustBuildingTime,Time to build trust through engagement,years,5,3,10,uniform,medium,Behavioral delay from draft model,2026-02-19

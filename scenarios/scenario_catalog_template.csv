@@ -1,0 +1,5 @@
+scenario_id,scenario_name,category,description,trigger_type,policy_bundle,time_horizon_years,active,owner,last_updated,notes
+SCN-001,Status Quo Baseline,baseline,No managed retreat program and reactive response only,Reactive_Disaster,none,50,true,,2026-02-19,Reference baseline
+SCN-002,Reactive Retreat,baseline,Retreat only after major events with limited funding,Reactive_Disaster,reactive_limited,50,true,,2026-02-19,
+SCN-003,Proactive Planned Retreat,baseline,Advance planning with voluntary participation and support services,Proactive_Policy,proactive_supportive,50,true,,2026-02-19,
+SCN-004,Hybrid Adaptive Retreat,baseline,Combination of proactive planning and disaster-triggered accelerators,Hybrid,hybrid_adaptive,50,true,,2026-02-19,

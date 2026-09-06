@@ -1,0 +1,7 @@
+path,rows,columns
+assumptions/assumption_register_template.csv,4,assumption_id | assumption_statement | category | linked_variables | basis | evidence_source | uncertainty_level | validation_plan | status | owner | last_updated | notes
+assumptions/parameter_ranges_template.csv,5,parameter_name | description | units | baseline_value | min_value | max_value | distribution | calibration_priority | rationale | last_updated
+models/equation_register_template.csv,3,equation_id | variable_name | equation_type | equation_expression | input_variables | units_check_status | test_status | owner | last_updated | notes
+models/ordinal_scale_definitions.csv,28,variable_name | level | label | observable_criteria | reference_framework
+models/variable_dictionary_template.csv,26,variable_name | display_name | category | subsystem | units | data_type | initial_value | min_value | max_value | source_or_rationale | notes
+scenarios/scenario_catalog_template.csv,4,scenario_id | scenario_name | category | description | trigger_type | policy_bundle | time_horizon_years | active | owner | last_updated | notes

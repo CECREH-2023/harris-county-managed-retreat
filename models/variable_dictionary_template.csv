@@ -1,0 +1,27 @@
+variable_name,display_name,category,subsystem,units,data_type,initial_value,min_value,max_value,source_or_rationale,notes
+HazardExposureIndex,Hazard Exposure Index,stock,Hazard and Risk Assessment,index,float,0.35,0,1,Initial placeholder,Replace with calibrated baseline
+HazardExposureIncrease,Hazard Exposure Increase,flow,Hazard and Risk Assessment,index/year,float,0,0,1,Driven by climate forcing,Exogenous forcing or lookup function
+HazardExposureDecrease,Hazard Exposure Decrease,flow,Hazard and Risk Assessment,index/year,float,0,0,1,Driven by retreat and mitigation,Links to Implementation subsystem
+ActualHazardRisk,Actual Hazard Risk,auxiliary,Hazard and Risk Assessment,index,float,0.35,0,1,Derived from exposure and vulnerability,Function of HazardExposureIndex and local conditions
+PerceivedHazardRisk,Perceived Hazard Risk,auxiliary,Hazard and Risk Assessment,index,float,0.35,0,1,Lags actual risk per ASM-001,SMOOTH3 delay; see EQ-003
+HazardPerceptionDelay,Hazard Perception Delay,constant,Hazard and Risk Assessment,years,float,2,1,3,Literature plus expert judgment,Sensitivity sweep range 1-3 years
+AtRiskHouseholds,At Risk Households,stock,Community and Population Dynamics,households,integer,2500,0,200000,Local cadastral estimate,Needs location-specific data
+PotentialRetreatDemand,Potential Retreat Demand,auxiliary,Community and Population Dynamics,households/year,float,0,0,10000,Function of risk and awareness,Driven by PerceivedHazardRisk and AtRiskHouseholds
+CommunityOpposition,Community Opposition,auxiliary,Community and Population Dynamics,ordinal (0-3),integer,1,0,3,Observed indicators,4-level ordinal scale; reduced by equity interventions per ASM-003; see ordinal_scale_definitions.csv
+MunicipalTaxBase,Municipal Tax Base,stock,Economic and Fiscal,USD/year,float,120000000,0,10000000000,Assessment roll,Use inflation-adjusted values
+AnnualProgramFunding,Annual Program Funding,constant,Economic and Fiscal,USD/year,float,15000000,5000000,50000000,Policy lever and fiscal constraint,Scenario-dependent; see parameter ranges
+FundingAvailable,Funding Available,auxiliary,Economic and Fiscal,USD/year,float,15000000,0,50000000,Derived from program budget and allocations,May include federal/state contributions
+FundingAdequacyFactor,Funding Adequacy Factor,auxiliary,Economic and Fiscal,dimensionless,float,1,0,1,Ratio of funding to demand cost,Constrains RetreatImplementationRate per ASM-002
+CompensationRate,Compensation Rate,constant,Economic and Fiscal,ratio,float,1.0,0.8,1.5,Scenario lever from options matrix,Relative to market value
+DiscountRate,Discount Rate,constant,Economic and Fiscal,1/year,float,0.03,0,0.1,Standard public project rate,Used in net present value calculations
+EngagementQualityIndex,Engagement Quality Index,auxiliary,Decision-Making and Governance,ordinal (0-3),integer,2,0,3,IAP2 Spectrum of Public Participation,4-level ordinal scale; see ordinal_scale_definitions.csv
+RetreatVoluntarinessIndex,Retreat Voluntariness Index,auxiliary,Decision-Making and Governance,ordinal (0-3),integer,2,0,3,Legal/policy framework,4-level ordinal scale; see ordinal_scale_definitions.csv
+ParticipationRate,Participation Rate,auxiliary,Decision-Making and Governance,dimensionless,float,0.5,0,1,Function of trust and voluntariness,Driven by engagement and compensation
+PolicyImplementationDelay,Policy Implementation Delay,constant,Decision-Making and Governance,years,float,3,2,5,Administrative process lag,Delay from adoption to implementation
+CommunityTrustBuildingTime,Community Trust Building Time,constant,Decision-Making and Governance,years,float,5,3,10,Behavioral delay from draft model,Affects engagement effectiveness over time
+RetreatImplementationRate,Retreat Implementation Rate,flow,Implementation and Retreat Process,households/year,float,0,0,10000,Program design parameter,See EQ-002; links funding and acceptance
+EquityIndex,Equity Index,auxiliary,Social Equity and Wellbeing,index,float,0.5,0,1,Composite placeholder,Define weighting method
+EquityTargetingIndex,Equity Targeting Index,auxiliary,Social Equity and Wellbeing,ordinal (0-3),integer,2,0,3,Environmental justice frameworks,4-level ordinal scale; see ordinal_scale_definitions.csv
+SupportServicesIndex,Support Services Index,auxiliary,Social Equity and Wellbeing,ordinal (0-3),integer,2,0,3,Service delivery models,4-level ordinal scale; see ordinal_scale_definitions.csv
+PerceivedInequity,Perceived Inequity,auxiliary,Social Equity and Wellbeing,ordinal (0-3),integer,1,0,3,Distributional analysis,4-level ordinal scale; drives CommunityOpposition per ASM-003; see ordinal_scale_definitions.csv
+EcosystemRestorationCommitmentIndex,Ecosystem Restoration Commitment Index,auxiliary,Land Use and Ecosystem Management,ordinal (0-3),integer,2,0,3,Ecological restoration standards,4-level ordinal scale; see ordinal_scale_definitions.csv
