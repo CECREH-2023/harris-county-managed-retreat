@@ -2,9 +2,9 @@
 
 This document records a proposed system-dynamics architecture, equations, parameterization, and validation design. Example values and tests are specifications to implement; no calibration or simulation validation is claimed.
 
-## 2. Model Structure Overview
+## Model Structure Overview
 
-### 2.1 Conceptual Framework
+### Conceptual Framework
 
 The managed retreat system operates through seven interconnected subsystems:
 
@@ -22,7 +22,7 @@ Social Equity & Wellbeing Subsystem
 
 Land Use & Ecosystem Management Subsystem
 
-### 2.2 Major Feedback Loops
+### Major Feedback Loops
 
 Reinforcing Loops (R)
 
@@ -60,9 +60,9 @@ B4: Equity Adjustment
 
 Inequitable Outcomes → Community Opposition → Policy Adjustment → Equity Measures → Inequitable Outcomes (decreased)
 
-## 3. Detailed Subsystem Specifications
+## Detailed Subsystem Specifications
 
-### 3.1 Hazard & Risk Assessment Subsystem
+### Hazard & Risk Assessment Subsystem
 
 Stock Variables
 
@@ -94,7 +94,7 @@ CC_Sensitivity_Parameter: 0.5-2.0 (how much CC increases hazard frequency)
 
 Hazard_Severity_Factor: 1-10 (relative severity: flooding=1, multiple hazards=5+)
 
-### 3.2 Community & Population Dynamics Subsystem
+### Community & Population Dynamics Subsystem
 
 Stock Variables
 
@@ -130,7 +130,7 @@ Average_Household_Size: 2.5 people/household
 
 Relocation_Success_Rate: 0.6-0.95 (depends on support services)
 
-### 3.3 Economic & Fiscal Subsystem
+### Economic & Fiscal Subsystem
 
 Stock Variables
 
@@ -172,7 +172,7 @@ Federal_Funding_Availability: $0-$50M/year (program dependent)
 
 Discount_Rate: 0.03-0.07 (for NPV calculations)
 
-### 3.4 Decision-Making & Governance Subsystem
+### Decision-Making & Governance Subsystem
 
 Stock Variables
 
@@ -208,7 +208,7 @@ Governance_Capacity: 0.3-1.0 (based on resources and expertise)
 
 Political_Will: 0-100 (context dependent)
 
-### 3.5 Implementation & Retreat Process Subsystem
+### Implementation & Retreat Process Subsystem
 
 Stock Variables
 
@@ -248,7 +248,7 @@ Caseworker_Throughput: 10-30 properties/year per caseworker
 
 Awareness_Half_Time: 0.5-2 years
 
-### 3.6 Social Equity & Wellbeing Subsystem
+### Social Equity & Wellbeing Subsystem
 
 Stock Variables
 
@@ -284,7 +284,7 @@ Support_Effectiveness: 0.4-0.9
 
 Displacement_Impact: 0.1-0.5 (wellbeing units per displaced household)
 
-### 3.7 Land Use & Ecosystem Management Subsystem
+### Land Use & Ecosystem Management Subsystem
 
 Stock Variables
 
@@ -320,9 +320,9 @@ Restoration_Capacity: 10-100 hectares/year
 
 Ecosystem_Type_Protection_Factor: 0.2 (grassland) to 0.8 (wetland/mangrove)
 
-## 4. Key Model Equations and Relationships
+## Key Model Equations and Relationships
 
-### 4.1 Time Constants and Delays
+### Time Constants and Delays
 
 System dynamics models require careful specification of delays to capture realistic system behavior:
 
@@ -330,7 +330,7 @@ PARAMETER: Hazard_Perception_Delay = 1-3 yearsPARAMETER: Policy_Implementation_D
 
 Implementation in Vensim:Perceived_Hazard_Risk = SMOOTH3(Actual_Hazard_Risk, Hazard_Perception_Delay)Policy_Implemented = DELAY3(Policy_Adopted, Policy_Implementation_Delay)Mature_Ecosystem = DELAY3(Restored_Ecosystem_Area, Ecosystem_Restoration_Time)
 
-### 4.2 Nonlinear Relationships
+### Nonlinear Relationships
 
 Many relationships in managed retreat are nonlinear and should be represented with table functions:
 
@@ -346,15 +346,15 @@ Sustained by favorable economics
 
 Erodes over time without reinforcement
 
-### 4.3 Conditional Logic
+### Conditional Logic
 
 Retreat Trigger Logic:Retreat_Program_Active = IF THEN ELSE(Trigger_Type = "Reactive_Disaster",IF THEN ELSE(Recent_Major_Disaster > 0, 1, 0),IF THEN ELSE(Trigger_Type = "Proactive_Policy",IF THEN ELSE(Policy_Stimulus_Present = 1 AND Funding_Available > Threshold, 1, 0),IF THEN ELSE(Trigger_Type = "Community_Request",IF THEN ELSE(Community_Petition_Threshold_Met = 1, 1, 0),0)))
 
 First Nations Special Considerations:First_Nations_Adjustment_Factor = IF THEN ELSE(First_Nations_Community = 1,(1 + Non_Market_Values_Weight * 0.5) *(1 + Ancestral_Land_Significance * 0.3) *(1 - Historical_Forced_Relocation_Trauma * 0.4) *Cultural_Protocol_Adherence,1.0)
 
-## 5. Model Parameterization Guide
+## Model Parameterization Guide
 
-### 5.1 Data Requirements
+### Data Requirements
 
 Parameter Category
 
@@ -398,7 +398,7 @@ Ecosystem extent, restoration costs
 
 Environmental agencies, NGOs
 
-### 5.2 Calibration Strategy
+### Calibration Strategy
 
 Step 1: Initialize Stocks
 
@@ -432,9 +432,9 @@ Compare multiple retreat scenarios
 
 Validate against case studies (e.g., Oakwood Beach, NY; Valmeyer, IL)
 
-## 6. Vensim Implementation Guide
+## Vensim Implementation Guide
 
-### 6.1 Model Organization
+### Model Organization
 
 Recommended View Structure:
 
@@ -456,7 +456,7 @@ Land Ecosystem View: Subsystem 7 detail
 
 Dashboard View: Key output graphs and policy controls
 
-### 6.2 Variable Naming Conventions
+### Variable Naming Conventions
 
 Follow these conventions for Vensim compatibility:
 
@@ -470,7 +470,7 @@ Parameters: PARAMETER_NAME (all caps, underscores)
 
 Units: Always specify in variable documentation
 
-### 6.3 Model Settings
+### Model Settings
 
 TIME STEP = 0.125 years (quarterly)
 
@@ -486,7 +486,7 @@ More accurate for complex nonlinear systems
 
 Alternative: Euler for initial debugging
 
-### 6.4 Units Checking
+### Units Checking
 
 Vensim's unit checking is critical for model validity. Define base units:
 
@@ -518,7 +518,7 @@ hectares/year
 
 Example Verification:Properties_Retreated [properties/year] =Properties_in_Pipeline [properties] /Processing_Time [years]
 
-### 6.5 Creating Lookup Functions
+### Creating Lookup Functions
 
 For nonlinear relationships, use Vensim's graphical lookup editor:
 
@@ -534,7 +534,7 @@ Save as reusable function
 
 Example:Compensation_Attractiveness_Lookup([(0.5,0)-(2,1)],(0.8,0.1),(1.0,0.5),(1.2,0.8),(1.5,0.95))
 
-### 6.6 Subscription and Array Structures
+### Subscription and Array Structures
 
 For modeling multiple land user groups or hazard types, use subscripts:
 
@@ -544,9 +544,9 @@ Properties_at_Risk[Land_User_Group] =INTEG(New_Development[Land_User_Group] -Pro
 
 Compensation_Rate[Land_User_Group] =Base_Compensation_Rate *Equity_Adjustment[Land_User_Group] *User_Group_Factor[Land_User_Group]
 
-## 7. Scenario Analysis Framework
+## Scenario Analysis Framework
 
-### 7.1 Base Case Scenarios
+### Base Case Scenarios
 
 Scenario 1: Status Quo (No Managed Retreat)
 
@@ -578,63 +578,22 @@ Combination of proactive and reactive elements
 
 Adaptive management with multiple triggers
 
-### 7.2 Policy Levers for Testing
+### Policy Levers for Testing
 
-Policy Lever
+These values are proposed scenario settings, not estimated effects or recommended compensation policies.
 
-Low Setting
+| Policy lever | Low setting | High setting |
+|---|---|---|
+| Compensation rate | 0.8 times market value | 1.5 times market value |
+| Funding level | $5 million/year | $50 million/year |
+| Support services | Minimal caseworkers | Comprehensive support |
+| Equity focus | Standard approach | Enhanced support for vulnerable households |
+| Engagement quality | Top-down decisions | Full participatory process |
+| Retreat voluntariness | Mandatory | Completely voluntary |
+| Ecosystem restoration | Minimal | Full natural restoration |
+| Time horizon | Reactive, 1–5 years | Long-term, 10–100 years |
 
-High Setting
-
-Compensation Rate
-
-### 0.8 (Below market)
-
-### 1.5 (50% bonus)
-
-Funding Level
-
-$5M/year
-
-$50M/year
-
-Support Services
-
-Minimal caseworkers
-
-Comprehensive support
-
-Equity Focus
-
-Standard approach
-
-Enhanced vulnerable support
-
-Engagement Quality
-
-Top-down decisions
-
-Full participatory process
-
-Retreat Voluntariness
-
-Mandatory
-
-Completely voluntary
-
-Ecosystem Restoration
-
-Minimal
-
-Full natural restoration
-
-Time Horizon
-
-Reactive (1-5 years)
-
-Long-term (10-100 years)
-
-### 7.3 Key Performance Indicators
+### Key Performance Indicators
 
 Monitor these outputs across scenarios:
 
@@ -686,9 +645,9 @@ Stakeholder engagement level
 
 Program completion timeline
 
-## 8. Model Validation and Testing
+## Model Validation and Testing
 
-### 8.1 Structural Validation Tests
+### Structural Validation Tests
 
 Boundary Adequacy Test
 
@@ -718,7 +677,7 @@ Set funding to zero → implementation should halt
 
 Set property values to extreme high → costs should scale appropriately
 
-### 8.2 Behavior Validation Tests
+### Behavior Validation Tests
 
 Behavior Reproduction Test
 
@@ -740,7 +699,7 @@ Identify critical uncertainties
 
 Test robustness of policy recommendations
 
-### 8.3 Policy Implication Testing
+### Policy Implication Testing
 
 Policy Effectiveness Test
 
@@ -758,9 +717,9 @@ Can mandatory retreat destroy social capital?
 
 Can delayed action worsen fiscal crisis?
 
-## 9. Advanced Model Features
+## Advanced Model Features
 
-### 9.1 Spatial Heterogeneity
+### Spatial Heterogeneity
 
 For models covering multiple communities or geographic scales:
 
@@ -770,7 +729,7 @@ Properties_at_Risk[Geographic_Scale] = ...Retreat_Strategy[Geographic_Scale] = .
 
 Connectivity Between Scales:Regional_Retreat_Pressure = SUM(Community_Retreat_Demand[Community])Watershed_Flooding_Benefit = f(Upstream_Retreat_Area[Neighborhood])
 
-### 9.2 Multi-Hazard Integration
+### Multi-Hazard Integration
 
 For compounding hazards:
 
@@ -780,7 +739,7 @@ Total_Hazard_Exposure = SUM(Hazard_Exposure[Hazard_Type])
 
 Compounding_Effect_Multiplier =IF THEN ELSE(Active_Hazards > 1,1 + 0.3 * (Active_Hazards - 1),1.0)
 
-### 9.3 Climate Change Scenarios
+### Climate Change Scenarios
 
 Implement IPCC scenario forcing:
 
@@ -790,7 +749,7 @@ Climate_Change_Impact_Index =INTEG(CC_Impact_Rate[CC_Scenario], Initial_CC_Impac
 
 Sea_Level_Rise[Year] =LOOKUP_TABLE(Year, SLR_Projection_Table[CC_Scenario])
 
-### 9.4 Optimization and Policy Search
+### Optimization and Policy Search
 
 Use Vensim optimization to find best policy combinations:
 
@@ -804,9 +763,9 @@ Community_Trust > 50
 
 Funding < Budget_Constraint
 
-## 10. Documentation and Reporting
+## Documentation and Reporting
 
-### 10.1 Model Documentation Standards
+### Model Documentation Standards
 
 Every variable should include:
 
@@ -822,7 +781,7 @@ Sensitivity: High/Medium/Low leverage
 
 Vensim Implementation:Use Comments field for each variable (right-click → Comment)
 
-### 10.2 Output Visualization
+### Output Visualization
 
 Recommended Graphs:
 
@@ -856,7 +815,7 @@ Cost-Benefit Ratio
 
 Ecosystem Health
 
-### 10.3 Stakeholder Communication
+### Stakeholder Communication
 
 Create simplified Causal Loop Diagrams for communication:
 
@@ -880,7 +839,7 @@ Real-time graph updates
 
 Scenario comparison tools
 
-## 12. Limitations and Future Extensions
+## Limitations and Future Extensions
 
 Current Model Limitations
 
@@ -929,4 +888,3 @@ Ecosystem service valuation refinement
 Social tipping points and phase transitions
 
 Intergenerational equity accounting
-

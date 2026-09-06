@@ -1,17 +1,9 @@
-# Models
+# Model registers
 
-Use this directory for system dynamics model files and core model documentation.
+This directory contains the design registers. No Vensim model file or calibrated executable model is included.
 
-## Suggested contents
+- [Variable dictionary template](variable_dictionary_template.csv): names, units, and definitions.
+- [Equation register template](equation_register_template.csv): equations, rationale, and checks.
+- [Ordinal scale definitions](ordinal_scale_definitions.csv): proposed scale interpretations.
 
-- `managed_retreat_core.mdl` primary Vensim model file
-- `subsystems/` optional subsystem model fragments or diagrams
-- `archive/` dated snapshots of retired model versions
-- `variable_dictionary_template.csv` canonical variable definitions and units
-- `equation_register_template.csv` key equations with rationale and checks
-
-## Conventions
-
-1. Use one canonical variable name for each concept.
-2. Keep units explicit and consistent in every equation.
-3. Capture equation changes in the assumption change log.
+Use consistent variable names and explicit units. Record assumptions and evidence in the [assumptions register](../assumptions/).

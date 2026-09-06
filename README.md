@@ -1,8 +1,6 @@
 # Managed Retreat Scenario Model
 
-How can planners compare retreat strategies across risk, fiscal, equity, and implementation objectives?
-
-A seven-subsystem system-dynamics design with explicit assumptions, parameters, and scenario definitions. The selected package is a design resource, not a calibrated simulator.
+This resource defines a system-dynamics architecture for comparing managed-retreat strategies across risk, fiscal, equity, and implementation objectives. It provides model registers and scenario templates for developing and documenting a simulator.
 
 ## Results and interpretation
 
@@ -13,20 +11,18 @@ This version contains **no calibrated executable simulator or estimated policy e
 ## Explore this repository
 
 - [Methods](docs/METHODS.md)
-- [Reproduction and dependencies](docs/REPRODUCING.md)
-- [Analysis source guide](docs/CODE_MAP.md)
+- [Using the resource](docs/REPRODUCING.md)
+- [Source guide](docs/CODE_MAP.md)
 - [Data sources and availability](data/README.md)
 
-## Reproduce the work
+## Use this resource
 
-**Available reproduction:** Model design and scenario templates prepared; no calibrated executable simulator.
+See [Using this resource](docs/REPRODUCING.md) for the document and template structure. No statistical software is needed to read the materials.
 
-Start with `python scripts/check_package.py` to check the file manifest, then follow the [reproduction guide](docs/REPRODUCING.md). A file-integrity check does not rerun the research analysis. Templates and model definitions are released. Downloaded articles and private contributor notes are excluded.
+**Scope:** Model design and scenario templates prepared; no calibrated executable simulator.
 
 ## Attribution and use
 
-The architecture and example values are research-team design resources, not empirically calibrated parameter estimates.
+Maintained by [CECREH at Texas Tech University](https://www.depts.ttu.edu/cecreh/). Documentation reviewed September 6, 2026. Cite the repository version you used; see [citation guidance](CITATION.md).
 
-A research resource from [CECREH at Texas Tech University](https://www.depts.ttu.edu/cecreh/). Snapshot: September 6, 2026. For code citation, use the repository URL and the commit identifier for the version you used; see [citation guidance](CITATION.md).
-
-No additional reuse license is granted by this snapshot. Contact the authors through CECREH about permissions; source-data terms apply separately.
+No reuse license is specified for this repository. Contact CECREH about permissions; source-data terms apply separately.

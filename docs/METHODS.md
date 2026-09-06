@@ -2,7 +2,7 @@
 
 How can planners compare retreat strategies across risk, fiscal, equity, and implementation objectives?
 
-A seven-subsystem system-dynamics design with explicit assumptions, parameters, and scenario definitions. The selected package is a design resource, not a calibrated simulator.
+A seven-subsystem system-dynamics design with explicit assumptions, parameters, and scenario definitions. The repository is a design resource, not a calibrated simulator.
 
 ## Analytical sequence
 
@@ -12,4 +12,4 @@ Use the model design to define seven interacting subsystems: hazard/risk, commun
 
 Research-team model architecture and a structured managed-retreat evidence base.
 
-Start with docs/MODEL_DESIGN.md, then populate the CSV/YAML templates. No statistical run command or completed model validation is claimed.
+See [data availability](../data/README.md) for the release boundary and [the reproduction guide](REPRODUCING.md) for inputs, commands, and checks.

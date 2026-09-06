@@ -1,17 +1,7 @@
-# Scenarios
+# Scenario definitions
 
-Use this directory to define and version scenario configurations.
+- [Scenario catalog](scenario_catalog_template.csv): comparison questions and scenario IDs.
+- [Baseline scenarios](baseline_scenarios_template.yaml): illustrative parameter bundles.
+- [Overrides](overrides/): example changes to baseline assumptions.
 
-## Files
-
-- `scenario_catalog_template.csv` high-level scenario definitions
-- `baseline_scenarios_template.yaml` default parameter bundles
-- `bundles/` reusable policy bundles
-- `overrides/` run-specific override files
-
-## Recommended process
-
-1. Register every scenario in the catalog.
-2. Keep baseline bundles stable.
-3. Put temporary run tweaks in `overrides/`.
-4. Link each model run to a scenario ID.
+Register each scenario, retain its baseline version, and link future simulation results to the exact configuration. These templates do not contain completed simulation results.

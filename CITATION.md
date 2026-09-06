@@ -1,7 +1,10 @@
 # Citation and attribution
 
-The architecture and example values are research-team design resources, not empirically calibrated parameter estimates.
+When using this resource, cite the repository title, its URL, and the Git commit or release tag you used. The review date below describes this documentation version, not a journal publication date.
 
-For this code/resource snapshot, identify the repository title “Managed Retreat Scenario Model,” its 2026-09-06 version date, and the final GitHub commit or release identifier used. Repository: https://github.com/CECREH-2023/managed-retreat.
+- **Title:** Managed Retreat Scenario Model
+- **Repository:** https://github.com/CECREH-2023/managed-retreat
+- **Maintainer:** CECREH, Texas Tech University
+- **Documentation reviewed:** September 6, 2026
 
-Original author credits in source files are retained. Cite source datasets separately, following [data availability](data/README.md).
+Original source credits and license notices are retained. Cite the source datasets and any associated scholarly article separately; see [data sources and availability](data/README.md).

@@ -1,5 +1,3 @@
-# Source guide
+# Resource guide
 
-Paths below refer to the distributed source. Analysis modules may require external inputs; inclusion does not imply the entire source workflow has been executed.
-
-This package contains authored reports or model-design resources rather than statistical source modules.
+This repository contains authored model-design resources and templates. See [Using this resource](REPRODUCING.md) for navigation. The scripts directory contains distribution checks, not an empirical analysis pipeline.

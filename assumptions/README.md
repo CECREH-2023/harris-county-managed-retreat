@@ -1,9 +1,6 @@
-# Assumptions
+# Assumptions and parameter ranges
 
-Track modeling assumptions, parameter ranges, and revisions in this directory.
+- [Assumption register](assumption_register_template.csv): assumptions, evidence, and validation needs.
+- [Parameter ranges](parameter_ranges_template.csv): bounds for future calibration and sensitivity analysis.
 
-## Files
-
-- `assumption_register_template.csv` full list of assumptions and evidence
-- `parameter_ranges_template.csv` parameter bounds for calibration and sensitivity
-- `change_log_template.md` dated record of assumption updates
+Example values are design choices, not estimated parameters. Record the evidence and version associated with each adopted value.
