@@ -1,0 +1,28 @@
+{
+  "case": "Harris County, Texas",
+  "county_fips": "48201",
+  "social_geography": "2020 census tracts",
+  "reference_year": 2024,
+  "historical_window": [
+    2010,
+    2024
+  ],
+  "initial_time": 2025,
+  "final_time": 2050,
+  "time_step_years": 0.25,
+  "integration_method_proposed": "RK4; untested in Vensim",
+  "scenario_currency": "constant 2024 USD",
+  "historical_currency": "nominal source-year USD; not automatically deflated",
+  "hazard_scope": "residential flood-risk screening; SFHA overlap is a provisional exposure definition",
+  "exposure_vintages": {
+    "tax_records": "2024 certified, revised September 2026",
+    "parcels": "October 2024",
+    "NFHL": "March 3 2026"
+  },
+  "scenario_scope": "new hypothetical residential retreat program after 2024; legacy obligations require a common baseline for historical comparisons",
+  "model_file": "models/Managed_Retreat_Main.mdl",
+  "model_file_status": "not supplied or found",
+  "vensim_installation_status": "Vensim is not bundled; edition and runtime must be verified before integration.",
+  "vensim_run_completed": false,
+  "literature_matrix_in_scope": false
+}

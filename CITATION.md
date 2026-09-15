@@ -1,10 +1,9 @@
 # Citation and attribution
 
-When using this resource, cite the repository title, its URL, and the Git commit or release tag you used. The review date below describes this documentation version, not a journal publication date.
+Suggested resource citation:
 
-- **Title:** Managed Retreat Scenario Model
-- **Repository:** https://github.com/CECREH-2023/managed-retreat
-- **Maintainer:** CECREH, Texas Tech University
-- **Documentation reviewed:** September 6, 2026
+CECREH. (2026). *Harris County Managed Retreat System Dynamics* (version 0.1.0, model design and data development). Texas Tech University. https://github.com/CECREH-2023/harris-county-managed-retreat
 
-Original source credits and license notices are retained. Cite the source datasets and any associated scholarly article separately; see [data sources and availability](data/README.md).
+Include the exact Git commit or release version and access date when using these materials. This is a development resource, not a peer-reviewed finding or an executable validated model.
+
+The architecture originates in the team's shared managed-retreat model guide and October 15, 2024 mind map. The Harris County evidence inventory and dictionary were prepared in Jesse R. Andrews's research workspace for the CECREH model-development project. Cite original agencies and data releases as well as this repository; the source catalog and manifest identify those materials. Formal publication authorship remains to be designated by the research team.

@@ -1,6 +1,5 @@
-# Assumptions and parameter ranges
+# Assumptions
 
-- [Assumption register](assumption_register_template.csv): assumptions, evidence, and validation needs.
-- [Parameter ranges](parameter_ranges_template.csv): bounds for future calibration and sensitivity analysis.
+The templates in this folder are illustrative records from the earlier architecture. The current [parameter records](../data/Parameters.csv) contain 26 assumed, three derived-proxy, and one observed value. [Assumptions.csv](../documentation/Assumptions.csv) records the broader working assumption inventory; [Gap_Queue.csv](../documentation/Gap_Queue.csv) identifies unresolved evidence needs.
 
-Example values are design choices, not estimated parameters. Record the evidence and version associated with each adopted value.
+Sensitivity ranges are design choices rather than confidence intervals. Record justification, source, units, baseline scope, and sensitivity for any retained assumption. The hypothetical initial-condition profile must remain separate from unavailable empirical baselines.

@@ -1,0 +1,23 @@
+variable,value,unit,base_year,geography,group,source,evidence_status,initial_parameter,reference_value,reference_unit,reference_scope,note
+Properties_at_Risk,143574.0,properties,2024,Harris County TX; FIPS 48201,all,hcad_parcels_2024_oct;nfhl_harris_20260303,derived_proxy,Initial_Properties_in_Hazard_Zone,113211.14853646129,residential_structures,2022 NSI residential structures under newer NFHL map; not parcels and not a 2024 map,"Residential 2024 HCAD accounts with any parcel overlap with March 2026 SFHA; screening exposure proxy, not all flood risk or a historical 2024 map. Unmatched accounts are unknown."
+Cumulative_Hazard_Events,0.0,events,2024,Harris County TX; FIPS 48201,all,model_boundary,assumed,0,,,,Counter of events occurring after model start; not historical event total
+Climate_Change_Impact_Index,,dimensionless (0-100),2024,Harris County TX; FIPS 48201,all,,unavailable,Current_CC_Impact,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Community_Population,4838303.0,people,2024,Harris County TX; FIPS 48201,all,local_acs2024_b01001,observed,Initial_Population,,,,Published 2020-2024 ACS estimate
+Homeowners,961437.0,households,2024,Harris County TX; FIPS 48201,all,local_acs2024_b25003,observed,Initial_Homeowners,,,,"Owner-occupied households, not persons or property accounts"
+Renters,795727.0,households,2024,Harris County TX; FIPS 48201,all,local_acs2024_b25003,observed,Initial_Renters,,,,Renter-occupied households
+Community_Social_Capital,,dimensionless (0-100),2024,Harris County TX; FIPS 48201,all,,unavailable,50,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Municipal_Tax_Base,665000000000.0,dollars,2024,Harris County TX; FIPS 48201,all,county_budget_fy2026,observed_rounded,Initial_Assessment_Value,,,,"Adapt to Harris County; original certified taxable value, PDF page 24; rounded to nearest billion"
+Retreat_Funding_Available,,dollars,2024,Harris County TX; FIPS 48201,all,,unavailable,0,21720000.0,USD_nominal,"HCD program unspent allocation 2024-09-30, not available cash at 2024 year end",No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Cumulative_Disaster_Costs,0.0,dollars,2024,Harris County TX; FIPS 48201,all,model_boundary,assumed,0,,,,Counter of costs incurred after model start; not historical losses
+Community_Trust_in_Process,,dimensionless (0-100),2024,Harris County TX; FIPS 48201,all,,unavailable,50,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Retreat_Policy_Development_Progress,,dimensionless (0-100),2024,Harris County TX; FIPS 48201,all,,unavailable,0,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Stakeholder_Engagement_Level,,dimensionless (0-100),2024,Harris County TX; FIPS 48201,all,,unavailable,20,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Properties_in_Retreat_Pipeline,,properties,2024,Harris County TX; FIPS 48201,all,,unavailable,0,14.0,properties,"HCD program only, 2024-09-30 pending acquisition statuses; not all Harris County",No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Relocated_Households,0.0,households,2024,Harris County TX; FIPS 48201,all,model_boundary,assumed,0,,,,Counter of additional successful relocations after model start; excludes legacy completions
+Support_Services_Capacity,,caseworkers_equivalent,2024,Harris County TX; FIPS 48201,all,,unavailable,Initial_Capacity,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Equity_Index,,dimensionless (0-100),2024,Harris County TX; FIPS 48201,all,,unavailable,50,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Vulnerable_Population_Wellbeing,,dimensionless (0-100),2024,Harris County TX; FIPS 48201,all,,unavailable,Initial_Wellbeing,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Community_Psychosocial_Stress,,dimensionless (0-100),2024,Harris County TX; FIPS 48201,all,,unavailable,30,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Retreat_Lands_Area,,hectares,2024,Harris County TX; FIPS 48201,all,,unavailable,0,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Restored_Ecosystem_Area,,hectares,2024,Harris County TX; FIPS 48201,all,,unavailable,0,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.
+Ecosystem_Health_Index,,dimensionless (0-100),2024,Harris County TX; FIPS 48201,all,,unavailable,Initial_Ecosystem_Health,,,,No defensible countywide 2024 measurement. See Gap_Queue.csv.

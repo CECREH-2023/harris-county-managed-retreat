@@ -1,0 +1,29 @@
+research_file,included,reason
+data/ACS_2024_Estimates_MOE.csv,true,Selected aggregate evidence or model configuration.
+data/Calibration_Data.csv,true,Selected aggregate evidence or model configuration.
+data/Calibration_Data.xlsx,false,Retained research input or alternate workbook; omitted from curated distribution. See source catalog and data availability.
+data/Climate_Scenario_Reference.csv,true,Selected aggregate evidence or model configuration.
+data/Disaster_Assistance.csv,false,Retained research input or alternate workbook; omitted from curated distribution. See source catalog and data availability.
+data/Domestic_Outmigration_2024.csv,true,Selected aggregate evidence or model configuration.
+data/FEMA_Mitigation_Inventory_v1.csv,false,Retained research input or alternate workbook; omitted from curated distribution. See source catalog and data availability.
+data/FEMA_Mitigation_Inventory_v4.csv,false,Retained research input or alternate workbook; omitted from curated distribution. See source catalog and data availability.
+data/Fiscal_Funding.csv,true,Selected aggregate evidence or model configuration.
+data/GLO_Residential_Buyout_Quarterly.csv,true,Selected aggregate evidence or model configuration.
+data/Hazard_Annual_Counts.csv,true,Selected aggregate evidence or model configuration.
+data/Hazard_Inputs.csv,true,Selected aggregate evidence or model configuration.
+data/Historical_Selected_Extremes.csv,false,Retained research input or alternate workbook; omitted from curated distribution. See source catalog and data availability.
+data/Initial_Conditions.csv,true,Selected aggregate evidence or model configuration.
+data/Initial_Conditions_Illustrative.csv,true,Selected aggregate evidence or model configuration.
+data/Insurance_Coverage.csv,false,Retained research input or alternate workbook; omitted from curated distribution. See source catalog and data availability.
+data/Land_Restoration.csv,false,Parcel/account-level records and geometry-related identifiers are excluded; aggregate model proxies are documented separately.
+data/Lookup_Tables.csv,true,Selected aggregate evidence or model configuration.
+data/Lookup_Tables.xlsx,false,Retained research input or alternate workbook; omitted from curated distribution. See source catalog and data availability.
+data/Parameters.csv,true,Selected aggregate evidence or model configuration.
+data/Participation_Support_Equity.csv,true,Selected aggregate evidence or model configuration.
+data/Population_Housing.csv,true,Selected aggregate evidence or model configuration.
+data/Population_Housing_Projections.csv,true,Selected aggregate evidence or model configuration.
+data/Program_Accomplishments.csv,true,Selected aggregate evidence or model configuration.
+data/Program_Beneficiary_Context.csv,true,Selected aggregate evidence or model configuration.
+data/Residential_Parcel_Inputs.csv.gz,false,Parcel/account-level records and geometry-related identifiers are excluded; aggregate model proxies are documented separately.
+data/Retreat_Program_History.csv,true,Selected aggregate evidence or model configuration.
+data/Tract_Exposure_Context.csv,false,Retained research input or alternate workbook; omitted from curated distribution. See source catalog and data availability.

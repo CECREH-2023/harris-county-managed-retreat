@@ -1,33 +1,116 @@
 {
-  "date": "2026-09-06",
-  "package": "managed-retreat",
-  "reproduction_scope": "Model design and scenario templates prepared; no calibrated executable simulator.",
-  "checks": {
-    "python_syntax": {
-      "files": 2,
-      "errors": []
-    },
-    "text_hygiene": {
-      "files": 29,
-      "findings": []
-    },
-    "relative_document_links": {
-      "checked": 31,
-      "broken": []
-    }
-  },
-  "scientific_checks": [
+  "version": "0.1.0",
+  "passed": 27,
+  "failed": [],
+  "checks": [
     {
-      "check": "Empirical reproduction",
-      "status": "not applicable",
-      "scope": "Authored design or synthesis resource"
+      "check": "300 unique dictionary entries",
+      "passed": true
+    },
+    {
+      "check": "all entries have definition, derivation, contribution and evidence",
+      "passed": true
+    },
+    {
+      "check": "all 295 assessment entries are covered",
+      "passed": true
+    },
+    {
+      "check": "five additional configuration entries",
+      "passed": true
+    },
+    {
+      "check": "alias targets resolve",
+      "passed": true
+    },
+    {
+      "check": "281 guide dependency records",
+      "passed": true
+    },
+    {
+      "check": "guide dependency endpoints resolve",
+      "passed": true
+    },
+    {
+      "check": "62 external source families and one guide",
+      "passed": true
+    },
+    {
+      "check": "24 mind-map branches",
+      "passed": true
+    },
+    {
+      "check": "30 parameters retain the documented evidence mix",
+      "passed": true
+    },
+    {
+      "check": "22 stocks with 14 unavailable initial values",
+      "passed": true
+    },
+    {
+      "check": "24 settings across four scenarios",
+      "passed": true
+    },
+    {
+      "check": "all current inputs resolve to dictionary entries",
+      "passed": true
+    },
+    {
+      "check": "parameter values fall inside retained sensitivity bounds",
+      "passed": true
+    },
+    {
+      "check": "16725 unique tract-year observations",
+      "passed": true
+    },
+    {
+      "check": "1115 Harris County tract identifiers remain strings",
+      "passed": true
+    },
+    {
+      "check": "2010 to 2024 panel years",
+      "passed": true
+    },
+    {
+      "check": "Community_Population matches published county ACS estimate",
+      "passed": true
+    },
+    {
+      "check": "Homeowners matches published county ACS estimate",
+      "passed": true
+    },
+    {
+      "check": "Renters matches published county ACS estimate",
+      "passed": true
+    },
+    {
+      "check": "average household size matches published county estimate",
+      "passed": true
+    },
+    {
+      "check": "domestic outmigration derives from county B07403 counts",
+      "passed": true
+    },
+    {
+      "check": "Excel ZIP integrity",
+      "passed": true
+    },
+    {
+      "check": "five documented workbook sheets",
+      "passed": true
+    },
+    {
+      "check": "all dictionary names appear in the saved workbook",
+      "passed": true
+    },
+    {
+      "check": "workbook contains no executable spreadsheet formulas",
+      "passed": true
+    },
+    {
+      "check": "model status remains unexecuted",
+      "passed": true
     }
   ],
-  "license_file_present": false,
-  "documentation_review": {
-    "date": "2026-09-06",
-    "scope": "README, methods, setup, data definitions, provenance, citation guidance, and configuration entry points checked against distributed files and available source evidence. Original scientific-check scope remains as recorded below.",
-    "command_targets_checked": 0,
-    "findings": []
-  }
+  "scope": "Distribution, metadata consistency, and five selected Census/ACS derivations only; no Vensim, full upstream-data, calibration, or simulation validation."
 }

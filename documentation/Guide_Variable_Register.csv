@@ -1,0 +1,70 @@
+variable,role,subsystem,unit,guide_equation,guide_initial,definition,source_paragraph_1based,source_id,implementation_status
+Properties_at_Risk,stock,3.1 Hazard & Risk Assessment Subsystem,properties,,Initial_Properties_in_Hazard_Zone,,43,ali_model_guide,design_only; no executable mdl supplied
+Cumulative_Hazard_Events,stock,3.1 Hazard & Risk Assessment Subsystem,events,,0,,44,ali_model_guide,design_only; no executable mdl supplied
+Climate_Change_Impact_Index,stock,3.1 Hazard & Risk Assessment Subsystem,dimensionless (0-100),,Current_CC_Impact,,45,ali_model_guide,design_only; no executable mdl supplied
+Hazard_Event_Rate,flow,3.1 Hazard & Risk Assessment Subsystem,events/year,Base_Hazard_Frequency * Climate_Change_Multiplier * (1 + Random_Variation),,,47,ali_model_guide,design_only; no executable mdl supplied
+Properties_Destroyed,flow,3.1 Hazard & Risk Assessment Subsystem,properties/year,Properties_at_Risk * Hazard_Event_Rate * Average_Destruction_Rate,,,48,ali_model_guide,design_only; no executable mdl supplied
+Hazard_Exposure_Index,aux,3.1 Hazard & Risk Assessment Subsystem,dimensionless,(Properties_at_Risk / Total_Properties) * Hazard_Severity_Factor * Climate_Change_Impact_Index / 100,,,50,ali_model_guide,design_only; no executable mdl supplied
+Climate_Change_Multiplier,aux,3.1 Hazard & Risk Assessment Subsystem,dimensionless,1 + (Climate_Change_Impact_Index / 100) * CC_Sensitivity_Parameter,,,51,ali_model_guide,design_only; no executable mdl supplied
+Community_Population,stock,3.2 Community & Population Dynamics Subsystem,people,,Initial_Population,,59,ali_model_guide,design_only; no executable mdl supplied
+Homeowners,stock,3.2 Community & Population Dynamics Subsystem,households,,Initial_Homeowners,,60,ali_model_guide,design_only; no executable mdl supplied
+Renters,stock,3.2 Community & Population Dynamics Subsystem,households,,Initial_Renters,,61,ali_model_guide,design_only; no executable mdl supplied
+Community_Social_Capital,stock,3.2 Community & Population Dynamics Subsystem,dimensionless (0-100),,50,,62,ali_model_guide,design_only; no executable mdl supplied
+Outmigration,flow,3.2 Community & Population Dynamics Subsystem,people/year,Community_Population * Base_Outmigration_Rate * Hazard_Pressure_Multiplier * (1 - Community_Attachment_Factor),,,64,ali_model_guide,design_only; no executable mdl supplied
+Managed_Retreat_Relocations,flow,3.2 Community & Population Dynamics Subsystem,people/year,Properties_Retreated * Average_Household_Size * Relocation_Success_Rate,,,65,ali_model_guide,design_only; no executable mdl supplied
+Social_Capital_Erosion,flow,3.2 Community & Population Dynamics Subsystem,units/year,Community_Social_Capital * (Population_Decline_Rate + Displacement_Stress_Factor) * 0.1,,,66,ali_model_guide,design_only; no executable mdl supplied
+Community_Attachment_Factor,aux,3.2 Community & Population Dynamics Subsystem,dimensionless (0-1),0.3 + 0.4 * (Social_Capital / 100) + 0.3 * Place_Attachment_Index,,,68,ali_model_guide,design_only; no executable mdl supplied
+Hazard_Pressure_Multiplier,aux,3.2 Community & Population Dynamics Subsystem,dimensionless,1 + 2 * Hazard_Exposure_Index * (1 - Perceived_Safety),,,69,ali_model_guide,design_only; no executable mdl supplied
+Place_Attachment_Index,aux,3.2 Community & Population Dynamics Subsystem,dimensionless (0-1),"IF THEN ELSE(First_Nations_Community = 1, 0.8 + 0.2 * Ancestral_Land_Significance,
+0.4 + 0.3 * Years_of_Residence / 50)",,,70,ali_model_guide,design_only; no executable mdl supplied
+Municipal_Tax_Base,stock,3.3 Economic & Fiscal Subsystem,dollars,,Initial_Assessment_Value,,77,ali_model_guide,design_only; no executable mdl supplied
+Retreat_Funding_Available,stock,3.3 Economic & Fiscal Subsystem,dollars,,0,,78,ali_model_guide,design_only; no executable mdl supplied
+Cumulative_Disaster_Costs,stock,3.3 Economic & Fiscal Subsystem,dollars,,0,,79,ali_model_guide,design_only; no executable mdl supplied
+Buyout_Payments,flow,3.3 Economic & Fiscal Subsystem,dollars/year,Properties_Retreated * Average_Property_Value * Compensation_Rate,,,81,ali_model_guide,design_only; no executable mdl supplied
+Annual_Disaster_Damage_Costs,flow,3.3 Economic & Fiscal Subsystem,dollars/year,Hazard_Event_Rate * Properties_at_Risk * Average_Property_Value * Average_Damage_Fraction,,,82,ali_model_guide,design_only; no executable mdl supplied
+Federal_Funding,flow,3.3 Economic & Fiscal Subsystem,dollars/year,Federal_Funding_Availability * Retreat_Program_Eligibility * Political_Priority_Factor,,,83,ali_model_guide,design_only; no executable mdl supplied
+Compensation_Rate,aux,3.3 Economic & Fiscal Subsystem,dimensionless,Compensation_Type_Selector * Equity_Adjustment_Factor,,,85,ali_model_guide,design_only; no executable mdl supplied
+Cost_Benefit_Ratio,aux,3.3 Economic & Fiscal Subsystem,dimensionless,(Cumulative_Disaster_Costs + Future_Disaster_Costs_NPV) / (Total_Retreat_Costs + Retreat_Program_Admin_Costs),,,89,ali_model_guide,design_only; no executable mdl supplied
+Municipal_Fiscal_Stress,aux,3.3 Economic & Fiscal Subsystem,dimensionless (0-1),"MAX(0, MIN(1, (Budget_Gap + Service_Costs) / (Tax_Revenue + Transfer_Payments)))",,,90,ali_model_guide,design_only; no executable mdl supplied
+Community_Trust_in_Process,stock,3.4 Decision-Making & Governance Subsystem,dimensionless (0-100),,50,,98,ali_model_guide,design_only; no executable mdl supplied
+Retreat_Policy_Development_Progress,stock,3.4 Decision-Making & Governance Subsystem,dimensionless (0-100),,0,,99,ali_model_guide,design_only; no executable mdl supplied
+Stakeholder_Engagement_Level,stock,3.4 Decision-Making & Governance Subsystem,dimensionless (0-100),,20,,100,ali_model_guide,design_only; no executable mdl supplied
+Trust_Building_Actions,flow,3.4 Decision-Making & Governance Subsystem,units/year,Transparency_Level * Community_Engagement_Quality * Successful_Retreat_Demonstrations * 5,,,102,ali_model_guide,design_only; no executable mdl supplied
+Trust_Erosion,flow,3.4 Decision-Making & Governance Subsystem,units/year,Community_Trust * (Perceived_Inequity + Process_Delays + Communication_Failures) * 0.1,,,103,ali_model_guide,design_only; no executable mdl supplied
+Policy_Development_Rate,flow,3.4 Decision-Making & Governance Subsystem,percent/year,Governance_Capacity * Multi_Stakeholder_Participation * (Political_Will / 100) * 10 * (1 - Retreat_Policy_Development_Progress / 100),,,104,ali_model_guide,design_only; no executable mdl supplied
+Decision_Making_Approach,aux,3.4 Decision-Making & Governance Subsystem,categorical,Policy_Choice_Selector,,,106,ali_model_guide,design_only; no executable mdl supplied
+Governance_Structure_Effectiveness,aux,3.4 Decision-Making & Governance Subsystem,dimensionless (0-1),(Number_of_Actors_Engaged / Potential_Actors) * Coordination_Quality * Decision_Authority_Clarity,,,107,ali_model_guide,design_only; no executable mdl supplied
+First_Nations_Engagement_Quality,aux,3.4 Decision-Making & Governance Subsystem,dimensionless (0-1),Cultural_Appropriate_Process * Indigenous_Leadership_Level * Non_Market_Value_Recognition * Land_Rights_Respect,,,108,ali_model_guide,design_only; no executable mdl supplied
+Properties_in_Retreat_Pipeline,stock,3.5 Implementation & Retreat Process Subsystem,properties,,0,,116,ali_model_guide,design_only; no executable mdl supplied
+Relocated_Households,stock,3.5 Implementation & Retreat Process Subsystem,households,,0,,117,ali_model_guide,design_only; no executable mdl supplied
+Support_Services_Capacity,stock,3.5 Implementation & Retreat Process Subsystem,caseworkers_equivalent,,Initial_Capacity,,118,ali_model_guide,design_only; no executable mdl supplied
+Retreat_Applications,flow,3.5 Implementation & Retreat Process Subsystem,properties/year,Properties_at_Risk * Retreat_Willingness * Program_Awareness * Application_Ease_Factor,,,120,ali_model_guide,design_only; no executable mdl supplied
+Properties_Retreated,flow,3.5 Implementation & Retreat Process Subsystem,properties/year,"MIN(Properties_in_Pipeline / Processing_Time,
+Retreat_Funding_Available / (Average_Property_Value * Compensation_Rate),
+Support_Services_Capacity * Caseworker_Throughput)",,,121,ali_model_guide,design_only; no executable mdl supplied
+Successful_Relocations,flow,3.5 Implementation & Retreat Process Subsystem,households/year,"Properties_Retreated * Relocation_Success_Rate
+WHERE Relocation_Success_Rate depends on:",,,122,ali_model_guide,design_only; no executable mdl supplied
+Retreat_Willingness,aux,3.5 Implementation & Retreat Process Subsystem,dimensionless (0-1),Hazard_Perception * Compensation_Attractiveness * (1 - Place_Attachment_Index) * Trust_Factor - Legal_Obstacles,,,127,ali_model_guide,design_only; no executable mdl supplied
+Processing_Time,aux,3.5 Implementation & Retreat Process Subsystem,years,Base_Processing_Time * Legal_Complexity_Factor / Administrative_Efficiency,,,128,ali_model_guide,design_only; no executable mdl supplied
+Program_Awareness,aux,3.5 Implementation & Retreat Process Subsystem,dimensionless (0-1),Communication_Effectiveness * Time_Since_Program_Launch / (Time_Since_Program_Launch + Awareness_Half_Time),,,129,ali_model_guide,design_only; no executable mdl supplied
+Equity_Index,stock,3.6 Social Equity & Wellbeing Subsystem,dimensionless (0-100),,50,,136,ali_model_guide,design_only; no executable mdl supplied
+Vulnerable_Population_Wellbeing,stock,3.6 Social Equity & Wellbeing Subsystem,dimensionless (0-100),,Initial_Wellbeing,,137,ali_model_guide,design_only; no executable mdl supplied
+Community_Psychosocial_Stress,stock,3.6 Social Equity & Wellbeing Subsystem,dimensionless (0-100),,30,,138,ali_model_guide,design_only; no executable mdl supplied
+Equity_Improvements,aux,3.6 Social Equity & Wellbeing Subsystem,units/year,Equity_Policies_Implemented * Vulnerable_Population_Support * (100 - Equity_Index) * 0.1,,,140,ali_model_guide,design_only; no executable mdl supplied
+Wellbeing_Decline,flow,3.6 Social Equity & Wellbeing Subsystem,units/year,Displacement_Rate * Displacement_Impact + Service_Access_Loss + Cultural_Heritage_Loss,,,141,ali_model_guide,design_only; no executable mdl supplied
+Stress_Relief,flow,3.6 Social Equity & Wellbeing Subsystem,units/year,Psychosocial_Support_Capacity * Support_Effectiveness * Community_Psychosocial_Stress * 0.15,,,142,ali_model_guide,design_only; no executable mdl supplied
+Equity_in_Compensation,aux,3.6 Social Equity & Wellbeing Subsystem,dimensionless (0-1),1 - ABS(Homeowner_Compensation_Avg - Renter_Compensation_Avg) / (Homeowner_Compensation_Avg + Renter_Compensation_Avg),,,144,ali_model_guide,design_only; no executable mdl supplied
+Vulnerable_Population_Share,aux,3.6 Social Equity & Wellbeing Subsystem,dimensionless (0-1),(Low_Income_Households + Elderly_Households + Disabled_Households + Racialized_Households) / Total_Households,,,145,ali_model_guide,design_only; no executable mdl supplied
+Historical_Inequity_Factor,aux,3.6 Social Equity & Wellbeing Subsystem,dimensionless (1-3),"IF THEN ELSE(Racialized_Community = 1 OR First_Nations_Community = 1, 1.5 + Historical_Discrimination_Index, 1.0)",,,146,ali_model_guide,design_only; no executable mdl supplied
+Cultural_Heritage_Impact,aux,3.6 Social Equity & Wellbeing Subsystem,dimensionless (0-1),Heritage_Sites_Affected * Cultural_Significance * (1 - Heritage_Protection_Measures),,,147,ali_model_guide,design_only; no executable mdl supplied
+Retreat_Lands_Area,stock,3.7 Land Use & Ecosystem Management Subsystem,hectares,,0,,154,ali_model_guide,design_only; no executable mdl supplied
+Restored_Ecosystem_Area,stock,3.7 Land Use & Ecosystem Management Subsystem,hectares,,0,,155,ali_model_guide,design_only; no executable mdl supplied
+Ecosystem_Health_Index,stock,3.7 Land Use & Ecosystem Management Subsystem,dimensionless (0-100),,Initial_Ecosystem_Health,,156,ali_model_guide,design_only; no executable mdl supplied
+Land_Acquired_Through_Retreat,flow,3.7 Land Use & Ecosystem Management Subsystem,hectares/year,Properties_Retreated * Average_Property_Size,,,158,ali_model_guide,design_only; no executable mdl supplied
+Ecosystem_Restoration_Rate,flow,3.7 Land Use & Ecosystem Management Subsystem,hectares/year,"MIN(Retreat_Lands_Area - Restored_Ecosystem_Area,
+Restoration_Funding / Cost_Per_Hectare,
+Restoration_Capacity)",,,159,ali_model_guide,design_only; no executable mdl supplied
+Ecosystem_Improvement,flow,3.7 Land Use & Ecosystem Management Subsystem,units/year,(Restored_Ecosystem_Area / Total_Ecosystem_Area) * Natural_Recovery_Rate * 10,,,160,ali_model_guide,design_only; no executable mdl supplied
+Retreat_Land_Use_Strategy,aux,3.7 Land Use & Ecosystem Management Subsystem,categorical,Policy_Selection,,,162,ali_model_guide,design_only; no executable mdl supplied
+Ecosystem_Service_Benefits,aux,3.7 Land Use & Ecosystem Management Subsystem,dollars/year,Restored_Ecosystem_Area * (Flood_Protection_Value + Water_Quality_Value + Recreation_Value + Carbon_Sequestration_Value + Biodiversity_Value),,,163,ali_model_guide,design_only; no executable mdl supplied
+Natural_Hazard_Buffer_Capacity,aux,3.7 Land Use & Ecosystem Management Subsystem,dimensionless (0-1),(Restored_Ecosystem_Area / Total_Hazard_Zone_Area) * Ecosystem_Type_Protection_Factor,,,164,ali_model_guide,design_only; no executable mdl supplied

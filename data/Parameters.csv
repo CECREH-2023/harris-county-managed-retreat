@@ -1,0 +1,31 @@
+variable,value,unit,source,evidence_status,lower_bound,upper_bound,bound_type,subsystem,note
+Base_Hazard_Frequency,0.3,events/year,ali_model_guide,assumed,0.1,0.5,illustrative_sensitivity_range,hazard,Catastrophic event definition and severity must be fitted jointly; NOAA reports average 4.8 episodes/year and are not this parameter.
+Average_Destruction_Rate,0.125,properties/property/event,ali_model_guide,assumed,0.05,0.2,illustrative_sensitivity_range,hazard,No observed total-destruction denominator; claims and IHP registrations are not all at-risk properties.
+CC_Sensitivity_Parameter,1.25,dimensionless,ali_model_guide,assumed,0.5,2.0,illustrative_sensitivity_range,hazard,No fitted precipitation-to-event-frequency response.
+Hazard_Severity_Factor,1.0,dimensionless,ali_model_guide,assumed,1.0,10.0,illustrative_sensitivity_range,hazard,Single flooding hazard convention from guide.
+Base_Outmigration_Rate,0.039307269877521304,1/year,acs2024_b07403,derived_proxy,0.0378333949970983,0.04078680653731326,MOE_sensitivity_envelope_not_joint_confidence_interval,community,"(B07403_E010+B07403_E013)/B07403_E001; domestic outmigration age 1+, no international departures. Normalize hazard and attachment multipliers to 1 at baseline before use; this observed gross rate already reflects existing conditions."
+Average_Household_Size,2.73,people/household,acs2024_b25010,observed,2.72,2.7399999999999998,90_percent_MOE,community,Published county mean with 90% MOE; not population divided by housing units.
+Relocation_Success_Rate,0.775,dimensionless,ali_model_guide,assumed,0.6,0.95,illustrative_sensitivity_range,implementation,Relocated-case proportion is not sustainable relocation success.
+Average_Property_Value,474141.4551172218,USD_2024/property,hcad_2024_real_acct_owner;hcad_2024_real_jur_exempt;hcad_parcels_2024_oct;nfhl_harris_20260303;ali_model_guide,derived_proxy,200000.0,800000.0,guide_sensitivity_range_not_CI,fiscal,"Mean positive 2024 market value of Harris residential accounts with parcel overlap with March 2026 SFHA. Bounds are guide policy-sensitivity assumptions, not a confidence interval. Not eligibility, actual compensation or structure replacement cost."
+Average_Damage_Fraction,0.4,USD_damage/USD_property/event,ali_model_guide,assumed,0.2,0.6,illustrative_sensitivity_range,hazard,Guide prior; no measured all-property event loss ratio.
+Federal_Funding_Availability,25000000.0,USD_2024/year,ali_model_guide,assumed,0.0,50000000.0,illustrative_sensitivity_range,fiscal,"Illustrative future appropriation, not a guaranteed grant or spendable balance."
+Discount_Rate,0.05,1/year,ali_model_guide,assumed,0.03,0.07,illustrative_sensitivity_range,fiscal,Illustrative real discount rate; do not apply to unconverted nominal histories.
+Transparency_Level,0.5,dimensionless,ali_model_guide,assumed,0.0,1.0,illustrative_sensitivity_range,governance,"Scenario lever, not surveyed transparency."
+Community_Engagement_Quality,0.5,dimensionless,ali_model_guide,assumed,0.0,1.0,illustrative_sensitivity_range,governance,"Scenario lever, not surveyed engagement."
+Governance_Capacity,0.65,dimensionless,ali_model_guide,assumed,0.3,1.0,illustrative_sensitivity_range,governance,"Guide prior, not a staffing-based empirical estimate."
+Political_Will,50.0,index_points,ali_model_guide,assumed,0.0,100.0,illustrative_sensitivity_range,governance,Illustrative index.
+Base_Processing_Time,2.0,year,ali_model_guide,assumed,1.0,3.0,illustrative_sensitivity_range,implementation,Need application and closing dates; grant duration and snapshot backlog cannot identify this.
+Caseworker_Throughput,20.0,properties/year/caseworker,ali_model_guide,assumed,10.0,30.0,illustrative_sensitivity_range,implementation,No observed staffing denominator.
+Awareness_Half_Time,1.25,year,ali_model_guide,assumed,0.5,2.0,illustrative_sensitivity_range,implementation,Guide prior.
+Psychosocial_Support_Capacity,50.0,index_points,ali_model_guide,assumed,0.0,100.0,illustrative_sensitivity_range,equity,Guide scale is not FTE; requires normalization in stress-relief equation.
+Support_Effectiveness,0.65,dimensionless,ali_model_guide,assumed,0.4,0.9,illustrative_sensitivity_range,equity,Guide prior; no observed outcome study.
+Displacement_Impact,0.3,wellbeing_points/household,ali_model_guide,assumed,0.1,0.5,illustrative_sensitivity_range,equity,Guide prior; aggregate index requires population scaling.
+Average_Property_Size,0.11972704910826369,hectare/property,hcad_2024_real_acct_owner;hcad_2024_real_jur_exempt;hcad_parcels_2024_oct;nfhl_harris_20260303;ali_model_guide,derived_proxy,0.1,2.0,guide_sensitivity_range_not_CI,land,Mean stated acreage of SFHA-overlap single-family accounts; excludes zero/missing acreage. Bounds are guide sensitivity assumptions. Not acquired land; multi-family/condo land needs separate treatment.
+Cost_Per_Hectare,55000.0,USD_2024/hectare,ali_model_guide,assumed,10000.0,100000.0,illustrative_sensitivity_range,land,Guide prior; maintenance guidance provides no restoration cost estimate.
+Restoration_Capacity,55.0,hectare/year,ali_model_guide,assumed,10.0,100.0,illustrative_sensitivity_range,land,Guide prior; not measured HCFCD restoration capacity.
+Ecosystem_Type_Protection_Factor,0.5,dimensionless,ali_model_guide,assumed,0.2,0.8,illustrative_sensitivity_range,land,Guide prior; not a calibrated wetland flood-reduction effect.
+Hazard_Perception_Delay,2.0,year,ali_model_guide,assumed,1.0,3.0,illustrative_sensitivity_range,hazard,Guide prior.
+Policy_Implementation_Delay,3.5,year,ali_model_guide,assumed,2.0,5.0,illustrative_sensitivity_range,governance,Guide prior.
+Ecosystem_Restoration_Time,12.5,year,ali_model_guide,assumed,5.0,20.0,illustrative_sensitivity_range,land,Guide prior.
+Community_Trust_Building_Time,6.5,year,ali_model_guide,assumed,3.0,10.0,illustrative_sensitivity_range,governance,Guide prior.
+Infrastructure_Decommissioning_Time,2.0,year,ali_model_guide,assumed,1.0,3.0,illustrative_sensitivity_range,land,Guide prior.

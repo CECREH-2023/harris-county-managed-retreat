@@ -1,0 +1,33 @@
+date,table,area,status_sum,reported_total,difference,source_id,page
+2024-09-30,acquisition,Aldine Place,23,23,0,hcd_buyout_2024q3,7
+2024-09-30,acquisition,Allen Fields,193,193,0,hcd_buyout_2024q3,7
+2024-09-30,acquisition,Blue Bell,24,24,0,hcd_buyout_2024q3,7
+2024-09-30,acquisition,Greens Road,3,3,0,hcd_buyout_2024q3,7
+2024-09-30,acquisition,Hahl Sites,26,26,0,hcd_buyout_2024q3,7
+2024-09-30,acquisition,Highland Shores,141,141,0,hcd_buyout_2024q3,7
+2024-09-30,acquisition,Meadowview Land,16,16,0,hcd_buyout_2024q3,7
+2024-09-30,acquisition,Total,426,426,0,hcd_buyout_2024q3,7
+2024-09-30,relocation,Aldine Place,28,28,0,hcd_buyout_2024q3,7
+2024-09-30,relocation,Allen Fields,167,167,0,hcd_buyout_2024q3,7
+2024-09-30,relocation,Blue Bell,28,28,0,hcd_buyout_2024q3,7
+2024-09-30,relocation,Greens Road,274,274,0,hcd_buyout_2024q3,7
+2024-09-30,relocation,Hahl Sites,76,76,0,hcd_buyout_2024q3,7
+2024-09-30,relocation,Highland Shores,2,2,0,hcd_buyout_2024q3,7
+2024-09-30,relocation,Meadowview Land,161,161,0,hcd_buyout_2024q3,7
+2024-09-30,relocation,Total,736,736,0,hcd_buyout_2024q3,7
+2025-06-30,acquisition,Aldine Place,22,22,0,hcd_buyout_2025q2,7
+2025-06-30,acquisition,Allen Fields,195,193,2,hcd_buyout_2025q2,7
+2025-06-30,acquisition,Blue Bell,24,24,0,hcd_buyout_2025q2,7
+2025-06-30,acquisition,Greens Road,3,3,0,hcd_buyout_2025q2,7
+2025-06-30,acquisition,Hahl Sites,26,26,0,hcd_buyout_2025q2,7
+2025-06-30,acquisition,Highland Shores,141,141,0,hcd_buyout_2025q2,7
+2025-06-30,acquisition,Meadowview Land,16,16,0,hcd_buyout_2025q2,7
+2025-06-30,acquisition,Total,427,425,2,hcd_buyout_2025q2,7
+2025-06-30,relocation,Aldine Place,29,29,0,hcd_buyout_2025q2,7
+2025-06-30,relocation,Allen Fields,166,166,0,hcd_buyout_2025q2,7
+2025-06-30,relocation,Blue Bell,28,28,0,hcd_buyout_2025q2,7
+2025-06-30,relocation,Greens Road,273,273,0,hcd_buyout_2025q2,7
+2025-06-30,relocation,Hahl Sites,76,76,0,hcd_buyout_2025q2,7
+2025-06-30,relocation,Highland Shores,2,2,0,hcd_buyout_2025q2,7
+2025-06-30,relocation,Meadowview Land,161,161,0,hcd_buyout_2025q2,7
+2025-06-30,relocation,Total,735,735,0,hcd_buyout_2025q2,7

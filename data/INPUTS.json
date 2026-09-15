@@ -1,4 +1,62 @@
 {
-  "scope": "Authored design or literature resource; no computational inputs required for reading",
-  "required_inputs": []
+  "scope": "Curated design/data release. These distributed inputs support package checks; executable simulation additionally requires a reviewed model and resolved evidence gaps.",
+  "required_inputs": [
+    {
+      "path": "data/Parameters.csv"
+    },
+    {
+      "path": "data/Initial_Conditions.csv"
+    },
+    {
+      "path": "data/Initial_Conditions_Illustrative.csv"
+    },
+    {
+      "path": "data/Lookup_Tables.csv"
+    },
+    {
+      "path": "data/Calibration_Data.csv"
+    },
+    {
+      "path": "data/Population_Housing.csv"
+    },
+    {
+      "path": "data/ACS_2024_Estimates_MOE.csv"
+    },
+    {
+      "path": "data/Domestic_Outmigration_2024.csv"
+    },
+    {
+      "path": "data/Participation_Support_Equity.csv"
+    },
+    {
+      "path": "data/Hazard_Inputs.csv"
+    },
+    {
+      "path": "data/Hazard_Annual_Counts.csv"
+    },
+    {
+      "path": "data/Fiscal_Funding.csv"
+    },
+    {
+      "path": "data/Retreat_Program_History.csv"
+    },
+    {
+      "path": "data/GLO_Residential_Buyout_Quarterly.csv"
+    },
+    {
+      "path": "data/Program_Accomplishments.csv"
+    },
+    {
+      "path": "data/Program_Beneficiary_Context.csv"
+    },
+    {
+      "path": "data/Climate_Scenario_Reference.csv"
+    },
+    {
+      "path": "data/Population_Housing_Projections.csv"
+    },
+    {
+      "path": "documentation/Model_Data_Dictionary.csv"
+    }
+  ]
 }

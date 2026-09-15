@@ -1,5 +1,7 @@
 # Managed retreat model design
 
+> **Earlier guide architecture.** This document preserves the original design language and illustrative values. For current Harris County definitions, evidence, and proposed equation repairs, use the [September 15 dictionary](../documentation/Model_Data_Dictionary.csv). This is not an executable or validated model.
+
 This document records a proposed system-dynamics architecture, equations, parameterization, and validation design. Example values and tests are specifications to implement; no calibration or simulation validation is claimed.
 
 ## Model Structure Overview
