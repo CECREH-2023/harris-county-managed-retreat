@@ -1,0 +1,315 @@
+﻿token,in_original_dictionary,in_underscore_inventory,disposition,included_in_variable_source_register,guide_paragraphs
+Active_Hazards,False,True,Calculated model quantity,True,353
+Actual_Hazard_Risk,False,True,Calculated model quantity,True,174
+Administrative_Efficiency,True,True,Proxy or operational definition,True,128
+Ancestral_Land_Significance,True,True,Proxy or operational definition,True,70; 185
+Annual_Disaster_Damage_Costs,True,True,Calibration or new longitudinal evidence,True,79; 82
+Application_Ease_Factor,True,True,Calibration or new longitudinal evidence,True,120
+Auxiliary_Name,False,True,"Generic naming/function placeholder, not an empirical variable.",False,222
+Average_Damage_Fraction,True,True,Calibration or new longitudinal evidence,True,82; 93
+Average_Destruction_Rate,True,True,Calibration or new longitudinal evidence,True,48; 54
+Average_Household_Size,True,True,Direct measurement candidate,True,65; 73
+Average_Property_Size,True,True,Direct measurement candidate,True,158; 166
+Average_Property_Value,True,True,Direct measurement candidate,True,81; 82; 92; 121; 516; 535
+Awareness_Half_Time,True,True,Calibration or new longitudinal evidence,True,129; 133
+Base_Case_Results,False,True,Example artifact filename; no independent empirical variable.,False,486
+Base_Compensation_Rate,False,True,Scenario or policy choice,True,261
+Base_Hazard_Frequency,True,True,Direct measurement candidate,True,47; 53
+Base_Outmigration_Rate,True,True,Direct measurement candidate,True,64; 72; 518
+Base_Processing_Time,True,True,Direct measurement candidate,True,128; 131
+Biodiversity_Value,True,True,Calibration or new longitudinal evidence,True,163
+Births,True,False,Direct measurement candidate,True,59; 511
+Budget_Constraint,False,True,Scenario or policy choice,True,365
+Budget_Gap,True,True,Calculated model quantity,True,90
+Buyout_Payments,True,True,Direct measurement candidate,True,78; 81
+CC_Impact_Increase_Rate,True,True,Calculated model quantity,True,45
+CC_Impact_Rate,False,True,Alias to reconcile,True,357
+CC_Scenario,False,True,Scenario or policy choice,True,356; 357; 358
+CC_Sensitivity_Parameter,True,True,Calibration or new longitudinal evidence,True,51; 55
+Calibration_Data,False,True,Example artifact filename; no independent empirical variable.,False,486
+Capacity_Attrition,True,True,Direct measurement candidate,True,118
+Capacity_Building,True,True,Direct measurement candidate,True,118
+Carbon_Sequestration_Value,True,True,Calibration or new longitudinal evidence,True,163
+Caseworker_Throughput,True,True,Direct measurement candidate,True,121; 132; 516
+Climate_Change_Impact_Index,True,True,Proxy or operational definition,True,45; 50; 51; 357; 524
+Climate_Change_Multiplier,True,True,Calculated model quantity,True,47; 51
+Coastal_Erosion,False,True,Direct measurement candidate,True,351
+Commercial,False,False,Notation or category; no separate data,True,259
+Communication_Effectiveness,True,True,Proxy or operational definition,True,129
+Communication_Failures,True,True,Proxy or operational definition,True,103
+Community,False,False,Notation or category; no separate data,True,15; 25; 26; 28; 30; 39; 57; 178; 211; 292; 304; 346; 348; 380; 383; 407; 477
+Community_Attachment_Factor,True,True,Calibration or new longitudinal evidence,True,64; 68; 520; 525
+Community_Cohesion_Preservation,False,True,Proxy or operational definition,True,125
+Community_Engagement_Quality,True,True,Proxy or operational definition,True,102; 111
+Community_Opposition,False,True,Calibration or new longitudinal evidence,True,178
+Community_Petition_Threshold_Met,False,True,Scenario or policy choice,True,184
+Community_Population,True,True,Direct measurement candidate,True,59; 64; 511; 517; 532
+Community_Psychosocial_Stress,True,True,Proxy or operational definition,True,138; 142
+Community_Request,False,True,Notation or category; no separate data,True,184
+Community_Retreat_Demand,False,True,Direct measurement candidate,True,348
+Community_Social_Capital,True,True,Proxy or operational definition,True,62; 66; 525
+Community_Subsystem,False,True,Example artifact filename; no independent empirical variable.,False,486
+Community_Trust,True,True,Alias to reconcile,True,103; 364
+Community_Trust_Building_Time,True,True,Calibration or new longitudinal evidence,True,173
+Community_Trust_in_Process,True,True,Proxy or operational definition,True,98
+Compensation_Attractiveness,True,True,Calibration or new longitudinal evidence,True,127; 177; 529
+Compensation_Attractiveness_Lookup,False,True,Calibration or new longitudinal evidence,True,256; 529; 530
+Compensation_Rate,True,True,Scenario or policy choice,True,81; 85; 121; 177; 261; 516; 529
+Compensation_Type_Selector,True,True,Alias to reconcile,True,85
+Compounding_Effect_Multiplier,False,True,Calibration or new longitudinal evidence,True,353
+Coordination_Quality,True,True,Proxy or operational definition,True,107
+Cost_Benefit_Ratio,True,True,Calculated model quantity,True,89; 179; 527
+Cost_Per_Hectare,True,True,Direct measurement candidate,True,159; 167
+Cultural_Appropriate_Process,True,True,Proxy or operational definition,True,108
+Cultural_Heritage_Impact,True,True,Proxy or operational definition,True,147
+Cultural_Heritage_Loss,True,True,Proxy or operational definition,True,141
+Cultural_Protocol_Adherence,False,True,Proxy or operational definition,True,185
+Cultural_Significance,True,True,Proxy or operational definition,True,147
+Cumulative_Disaster_Costs,True,True,Calculated model quantity,True,79; 89; 527
+Cumulative_Hazard_Events,True,True,Calculated model quantity,True,44
+Current_CC_Impact,True,True,Alias to reconcile,True,45
+Deaths,True,False,Direct measurement candidate,True,59; 512
+Decision_Authority_Clarity,True,True,Proxy or operational definition,True,107
+Decision_Making_Approach,True,True,Scenario or policy choice,True,106
+Disabled_Households,True,True,Direct measurement candidate,True,145
+Disaster_Costs,False,True,Alias to reconcile,True,361
+Discount_Rate,True,True,Scenario or policy choice,True,95
+Displacement_Impact,True,True,Calibration or new longitudinal evidence,True,141; 151
+Displacement_Rate,True,True,Direct measurement candidate,True,141
+Displacement_Stress_Factor,True,True,Calibration or new longitudinal evidence,True,66
+Ecosystem_Benefits,False,True,Alias to reconcile,True,361
+Ecosystem_Decline,True,True,Calibration or new longitudinal evidence,True,156
+Ecosystem_Degradation,True,True,Direct measurement candidate,True,155
+Ecosystem_Health_Index,True,True,Proxy or operational definition,True,156
+Ecosystem_Improvement,True,True,Calibration or new longitudinal evidence,True,156; 160
+Ecosystem_Restoration_Rate,True,True,Direct measurement candidate,True,155; 159
+Ecosystem_Restoration_Time,True,True,Calibration or new longitudinal evidence,True,173; 174
+Ecosystem_Service_Benefits,True,True,Calculated model quantity,True,163
+Ecosystem_Type_Protection_Factor,True,True,Calibration or new longitudinal evidence,True,164; 169
+Elderly_Households,True,True,Direct measurement candidate,True,145
+Engagement_Activities,True,True,Direct measurement candidate,True,100
+Engagement_Fatigue,True,True,Calibration or new longitudinal evidence,True,100
+Enhanced_Compensation_Option,False,True,Notation or category; no separate data,True,88
+Equity_Adjustment,False,True,Alias to reconcile,True,261
+Equity_Adjustment_Factor,True,True,Scenario or policy choice,True,85
+Equity_Degradation,True,True,Calibration or new longitudinal evidence,True,136
+Equity_Improvements,True,True,Calibration or new longitudinal evidence,True,136; 140
+Equity_Index,True,True,Proxy or operational definition,True,136; 140; 363
+Equity_Policies_Implemented,True,True,Direct measurement candidate,True,140
+Equity_in_Compensation,True,True,Proxy or operational definition,True,144
+FINAL TIME,False,False,Scenario or policy choice,True,229
+Federal_Funding,True,True,Direct measurement candidate,True,78; 83
+Federal_Funding_Availability,True,True,Scenario or policy choice,True,83; 94
+First_Nations,False,True,Notation or category; no separate data,True,259
+First_Nations_Adjustment_Factor,False,True,Scenario or policy choice,True,185
+First_Nations_Community,True,True,Scenario or policy choice,True,70; 146; 185
+First_Nations_Engagement_Quality,True,True,Proxy or operational definition,True,108
+Flood_Protection_Value,True,True,Calculated model quantity,True,163
+Flooding,False,False,Notation or category; no separate data,True,351
+Flow_Name,False,True,"Generic naming/function placeholder, not an empirical variable.",False,221
+Full_Natural_Restoration,True,True,Notation or category; no separate data,True,162
+Fully_Mandatory,True,True,Notation or category; no separate data,True,106
+Funding,False,False,Alias to reconcile,True,30; 34; 35; 288; 365
+Funding_Available,False,True,Alias to reconcile,True,184
+Future_Disaster_Costs_NPV,True,True,Calculated model quantity,True,89; 527
+Geographic_Scale,False,True,Scenario or policy choice,True,346; 347
+Governance_Capacity,True,True,Proxy or operational definition,True,104; 112
+Governance_Structure_Effectiveness,True,True,Proxy or operational definition,True,107
+Government,False,False,Notation or category; no separate data,True,259
+Green_Infrastructure,True,True,Notation or category; no separate data,True,162
+Hazard_Event_Rate,True,True,Calibration or new longitudinal evidence,True,44; 47; 48; 82
+Hazard_Exposure,False,True,Calculated model quantity,True,352
+Hazard_Exposure_Index,True,True,Calculated model quantity,True,50; 69; 522; 534
+Hazard_Perception,True,True,Proxy or operational definition,True,127
+Hazard_Perception_Delay,True,True,Calibration or new longitudinal evidence,True,173; 174
+Hazard_Pressure_Multiplier,True,True,Calibration or new longitudinal evidence,True,64; 69; 519
+Hazard_Severity_Factor,True,True,Proxy or operational definition,True,50; 56; 523
+Hazard_Subsystem,False,True,Example artifact filename; no independent empirical variable.,False,486
+Hazard_Type,False,True,Scenario or policy choice,True,351; 352
+Hazard_Types,False,True,Alias to reconcile,True,492
+Heritage_Protection_Measures,True,True,Direct measurement candidate,True,147
+Heritage_Sites_Affected,True,True,Direct measurement candidate,True,147
+Historical_Discrimination_Index,True,True,Proxy or operational definition,True,146
+Historical_Forced_Relocation_Trauma,False,True,Proxy or operational definition,True,185
+Historical_Inequity_Factor,True,True,Proxy or operational definition,True,146
+Homeowner_Compensation_Avg,True,True,Direct measurement candidate,True,144
+Homeowner_Outmigration,True,True,Calibration or new longitudinal evidence,True,60
+Homeowner_Retreat,True,True,Direct measurement candidate,True,60
+Homeowners,True,False,Direct measurement candidate,True,60; 259
+INITIAL TIME,False,False,Scenario or policy choice,True,229
+INTEGRATION METHOD,False,False,Scenario or policy choice,True,230
+Immigration,True,False,Direct measurement candidate,True,59; 511
+Indigenous_Leadership_Level,True,True,Proxy or operational definition,True,108
+Individual_Properties,False,True,Notation or category; no separate data,True,346
+Infrastructure_Decommissioning_Time,True,True,Direct measurement candidate,True,173
+Initial_Assessment_Value,True,True,Alias to reconcile,True,77; 514
+Initial_CC_Impact,False,True,Alias to reconcile,True,357
+Initial_Capacity,True,True,Alias to reconcile,True,118
+Initial_Ecosystem_Health,True,True,Alias to reconcile,True,156
+Initial_Homeowners,True,True,Alias to reconcile,True,60
+Initial_Population,True,True,Alias to reconcile,True,59; 512
+Initial_Properties,False,True,Alias to reconcile,True,260
+Initial_Properties_at_Risk,False,True,Alias to reconcile,True,510
+Initial_Properties_in_Hazard_Zone,True,True,Alias to reconcile,True,43
+Initial_Renters,True,True,Alias to reconcile,True,61
+Initial_Wellbeing,True,True,Alias to reconcile,True,137
+Insurance_Payouts,True,True,Direct measurement candidate,True,78
+LOOKUP_TABLE,False,True,"Generic naming/function placeholder, not an empirical variable.",False,358
+Land_Acquired_Through_Retreat,True,True,Direct measurement candidate,True,154; 158
+Land_Restoration_Costs,True,True,Direct measurement candidate,True,78
+Land_Rights_Respect,True,True,Proxy or operational definition,True,108
+Land_User_Group,False,True,Scenario or policy choice,True,259; 260; 261; 543
+Land_User_Groups,False,True,Alias to reconcile,True,492
+Legal_Complexity_Factor,True,True,Calibration or new longitudinal evidence,True,128
+Legal_Obstacles,True,True,Proxy or operational definition,True,127
+Lookup_Tables,False,True,Example artifact filename; no independent empirical variable.,False,486
+Low_Income_Households,True,True,Direct measurement candidate,True,145
+Managed_Retreat_Main,False,True,Example artifact filename; no independent empirical variable.,False,486
+Managed_Retreat_Relocations,True,True,Direct measurement candidate,True,59; 65; 512
+Mandatory_with_Optout,True,True,Notation or category; no separate data,True,106
+Market_Value_Option,False,True,Notation or category; no separate data,True,86
+Mature_Ecosystem,False,True,Calculated model quantity,True,174
+Model_Documentation,False,True,Example artifact filename; no independent empirical variable.,False,486
+Multi_Purpose,True,True,Notation or category; no separate data,True,162
+Multi_Stakeholder_Participation,True,True,Proxy or operational definition,True,104
+Municipal_Contribution,True,True,Direct measurement candidate,True,78
+Municipal_Fiscal_Stress,True,True,Calculated model quantity,True,90
+Municipal_Tax_Base,True,True,Direct measurement candidate,True,77; 513
+Natural_Hazard_Buffer_Capacity,True,True,Calibration or new longitudinal evidence,True,164
+Natural_Recovery_Rate,True,True,Calibration or new longitudinal evidence,True,160
+Neighborhood,False,False,Notation or category; no separate data,True,346; 348
+New_Development,False,True,Alias to reconcile,True,260
+New_Development_Value,True,True,Direct measurement candidate,True,77; 513
+New_Development_in_Risk_Zone,True,True,Direct measurement candidate,True,43; 508
+New_Homeownership,True,True,Calibration or new longitudinal evidence,True,60
+New_Renters,True,True,Calibration or new longitudinal evidence,True,61
+Non_Market_Value_Recognition,True,True,Proxy or operational definition,True,108
+Non_Market_Values_Weight,False,True,Scenario or policy choice,True,185
+Number_of_Actors_Engaged,True,True,Direct measurement candidate,True,107
+Outmigration,True,False,Direct measurement candidate,True,24; 59; 64; 512; 517; 533
+PARAMETER_NAME,False,True,"Generic naming/function placeholder, not an empirical variable.",False,223
+Perceived_Hazard_Risk,False,True,Proxy or operational definition,True,174
+Perceived_Inequity,True,True,Proxy or operational definition,True,103; 178
+Perceived_Safety,True,True,Proxy or operational definition,True,69
+Persuasive,False,False,Notation or category; no separate data,True,106
+Place_Attachment_Index,True,True,Proxy or operational definition,True,68; 70; 127; 526
+Policy_Adopted,False,True,Direct measurement candidate,True,174
+Policy_Choice_Selector,True,True,Alias to reconcile,True,106
+Policy_Development_Rate,True,True,Calculated model quantity,True,99; 104
+Policy_Implementation_Delay,True,True,Direct measurement candidate,True,173; 174
+Policy_Implemented,False,True,Direct measurement candidate,True,174
+Policy_Selection,True,True,Alias to reconcile,True,162
+Policy_Stimulus_Present,False,True,Proxy or operational definition,True,184
+Political_Priority_Factor,True,True,Proxy or operational definition,True,83
+Political_Will,True,True,Proxy or operational definition,True,104; 113; 179
+Population_Decline_Rate,True,True,Calculated model quantity,True,66
+Potential_Actors,True,True,Proxy or operational definition,True,107
+Pre_Disaster_Value_Option,False,True,Notation or category; no separate data,True,87
+Proactive_Policy,False,True,Notation or category; no separate data,True,184
+Proactive_Retreat_Identification,True,True,Direct measurement candidate,True,116
+Process_Delays,True,True,Direct measurement candidate,True,103
+Processing_Time,True,True,Direct measurement candidate,True,121; 128; 248; 516
+Program_Awareness,True,True,Proxy or operational definition,True,120; 129
+Properties_Destroyed,True,True,Calibration or new longitudinal evidence,True,43; 48; 260; 510
+Properties_Retreated,True,True,Direct measurement candidate,True,43; 65; 81; 116; 121; 122; 158; 248; 260; 509; 516
+Properties_at_Risk,True,True,Direct measurement candidate,True,43; 48; 50; 82; 120; 260; 347; 508; 522; 543
+Properties_in_Pipeline,True,True,Alias to reconcile,True,121; 248; 516
+Properties_in_Retreat_Pipeline,True,True,Direct measurement candidate,True,116
+Property_Value_Appreciation,True,True,Direct measurement candidate,True,77; 513
+Property_Value_Depreciation,True,True,Calibration or new longitudinal evidence,True,77; 514
+Provincial_Funding,True,True,Direct measurement candidate,True,78
+Psychosocial_Support_Capacity,True,True,Direct measurement candidate,True,142; 149
+RCP2.6,False,False,Notation or category; no separate data,True,356
+RCP4.5,False,False,Notation or category; no separate data,True,356
+RCP8.5,False,False,Notation or category; no separate data,True,356
+Racialized_Community,True,True,Scenario or policy choice,True,146
+Racialized_Households,True,True,Direct measurement candidate,True,145
+Random_Variation,True,True,Calibration or new longitudinal evidence,True,47
+Reactive_Disaster,False,True,Notation or category; no separate data,True,184
+Receiving_Area_Housing_Availability,False,True,Proxy or operational definition,True,123
+Recent_Disaster_Events,False,True,Calculated model quantity,True,179
+Recent_Major_Disaster,False,True,Calculated model quantity,True,184
+Recreation_Value,True,True,Calibration or new longitudinal evidence,True,163
+Regional_Retreat_Pressure,False,True,Calculated model quantity,True,348
+Relocated_Households,True,True,Direct measurement candidate,True,117
+Relocation_Success_Rate,True,True,Calibration or new longitudinal evidence,True,65; 74; 122
+Relocation_Support_Services,False,True,Direct measurement candidate,True,124
+Renter_Compensation_Avg,True,True,Direct measurement candidate,True,144
+Renter_Displacement,True,True,Direct measurement candidate,True,61
+Renter_Retreat,True,True,Direct measurement candidate,True,61
+Renters,True,False,Direct measurement candidate,True,61; 259
+Restoration_Capacity,True,True,Direct measurement candidate,True,159; 168
+Restoration_Funding,True,True,Direct measurement candidate,True,159
+Restored_Ecosystem_Area,True,True,Direct measurement candidate,True,155; 159; 160; 163; 164; 174
+Restricted_Rebuilding,True,True,Notation or category; no separate data,True,162
+Results_Dashboard,False,True,Example artifact filename; no independent empirical variable.,False,486
+Retreat_Applications,True,True,Direct measurement candidate,True,116; 120
+Retreat_Dropouts,True,True,Direct measurement candidate,True,116
+Retreat_Funding_Available,True,True,Direct measurement candidate,True,78; 121; 516
+Retreat_Land_Redevelopment,True,True,Scenario or policy choice,True,154
+Retreat_Land_Use_Strategy,True,True,Scenario or policy choice,True,162
+Retreat_Lands_Area,True,True,Direct measurement candidate,True,154; 159
+Retreat_Policy_Development_Progress,True,True,Proxy or operational definition,True,99; 104
+Retreat_Program_Active,False,True,Direct measurement candidate,True,184
+Retreat_Program_Admin_Costs,True,True,Direct measurement candidate,True,89; 527
+Retreat_Program_Costs,False,True,Alias to reconcile,True,361
+Retreat_Program_Eligibility,True,True,Direct measurement candidate,True,83
+Retreat_Property_Removal,True,True,Direct measurement candidate,True,77; 514
+Retreat_Strategy,False,True,Scenario or policy choice,True,347
+Retreat_Willingness,True,True,Calibration or new longitudinal evidence,True,120; 127
+SLR_Projection_Table,False,True,Direct measurement candidate,True,358
+Scenario_Comparison,False,True,Example artifact filename; no independent empirical variable.,False,486
+Scenario_Parameters,False,True,Example artifact filename; no independent empirical variable.,False,486
+Sea_Level_Rise,False,True,Direct measurement candidate,True,351; 358
+Sensitivity_Analysis_Results,False,True,Example artifact filename; no independent empirical variable.,False,486
+Service_Access_Loss,True,True,Proxy or operational definition,True,141
+Service_Costs,True,True,Direct measurement candidate,True,90
+Social_Capital,True,True,Alias to reconcile,True,68
+Social_Capital_Building,True,True,Calibration or new longitudinal evidence,True,62
+Social_Capital_Erosion,True,True,Calibration or new longitudinal evidence,True,62; 66
+Social_Disruption_Costs,False,True,Calibration or new longitudinal evidence,True,361
+Stakeholder_Engagement_Level,True,True,Proxy or operational definition,True,100
+Stakeholder_Interface,False,True,Example artifact filename; no independent empirical variable.,False,486
+Stock_Name,False,True,"Generic naming/function placeholder, not an empirical variable.",False,220
+Stress_Accumulation,True,True,Calibration or new longitudinal evidence,True,138
+Stress_Relief,True,True,Calibration or new longitudinal evidence,True,138; 142
+Successful_Relocations,True,True,Direct measurement candidate,True,117; 122
+Successful_Retreat_Demonstrations,True,True,Direct measurement candidate,True,102
+Support_Effectiveness,True,True,Calibration or new longitudinal evidence,True,142; 150
+Support_Service_Costs,True,True,Direct measurement candidate,True,78
+Support_Services_Capacity,True,True,Direct measurement candidate,True,118; 121; 516
+TIME STEP,False,False,Scenario or policy choice,True,226
+Tax_Revenue,True,True,Direct measurement candidate,True,90
+Threshold,False,False,Scenario or policy choice,True,184
+Time_Since_Program_Launch,True,True,Direct measurement candidate,True,129
+Total_Ecosystem_Area,True,True,Direct measurement candidate,True,160
+Total_Hazard_Exposure,False,True,Calculated model quantity,True,352
+Total_Hazard_Zone_Area,True,True,Direct measurement candidate,True,164
+Total_Households,True,True,Direct measurement candidate,True,145
+Total_Properties,True,True,Direct measurement candidate,True,50; 522
+Total_Retreat_Costs,True,True,Calculated model quantity,True,89; 527
+Total_Social_Cost,False,True,Calculated model quantity,True,361
+Transfer_Payments,True,True,Direct measurement candidate,True,90
+Transparency_Level,True,True,Proxy or operational definition,True,102; 110
+Trigger_Type,False,True,Scenario or policy choice,True,184
+Trust_Building_Actions,True,True,Calibration or new longitudinal evidence,True,98; 102
+Trust_Erosion,True,True,Calibration or new longitudinal evidence,True,98; 103
+Trust_Factor,True,True,Alias to reconcile,True,127
+Upstream_Retreat_Area,False,True,Direct measurement candidate,True,348
+User_Group_Factor,False,True,Scenario or policy choice,True,261
+Validation_Report,False,True,Example artifact filename; no independent empirical variable.,False,486
+Variable_Dictionary,False,True,Example artifact filename; no independent empirical variable.,False,486
+Voluntary,False,False,Notation or category; no separate data,True,106; 482; 520
+Voluntary_with_Incentives,True,True,Notation or category; no separate data,True,106
+Vulnerable_Population_Share,True,True,Proxy or operational definition,True,145
+Vulnerable_Population_Support,True,True,Proxy or operational definition,True,140
+Vulnerable_Population_Wellbeing,True,True,Proxy or operational definition,True,137
+Water_Quality_Value,True,True,Calibration or new longitudinal evidence,True,163
+Watershed,False,False,Notation or category; no separate data,True,346
+Watershed_Flooding_Benefit,False,True,Calibration or new longitudinal evidence,True,348
+Wellbeing_Decline,True,True,Calibration or new longitudinal evidence,True,137; 141
+Wellbeing_Improvements,True,True,Calibration or new longitudinal evidence,True,137
+Wildfire,False,False,Notation or category; no separate data,True,351
+Year,False,False,Notation or category; no separate data,True,358
+Years_of_Residence,True,True,Direct measurement candidate,True,70
+caseworkers_equivalent,True,True,Notation or category; no separate data,True,118

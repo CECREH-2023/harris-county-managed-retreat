@@ -1,28 +1,37 @@
-# Managed Retreat Scenario Model
+# Harris County Managed Retreat System Dynamics
 
-This resource defines a system-dynamics architecture for comparing managed-retreat strategies across risk, fiscal, equity, and implementation objectives. It provides model registers and scenario templates for developing and documenting a simulator.
+How could managed retreat reduce flood exposure while sustaining household wellbeing, local finances, and restored land in Harris County, Texas? This project develops a Vensim system-dynamics model to examine those connected outcomes and compare retreat policies over time.
 
-## Results and interpretation
+**Version 0.1.0 — model design and data development, September 15, 2026.** The release brings together a seven-subsystem architecture, a 300-entry data dictionary, a comprehensive source assessment, and selected aggregate inputs. An executable Vensim model has not yet been supplied or run. No calibrated policy effects or simulation results are reported.
 
-The deliverable is a **seven-subsystem model architecture** connecting hazard and risk, community and population, fiscal conditions, governance, implementation, equity and wellbeing, and land and ecosystems. The [model design](docs/MODEL_DESIGN.md), [model registers](models/), and [scenario templates](scenarios/) make proposed stock–flow relationships and assumptions explicit.
+## Start here
 
-This version contains **no calibrated executable simulator or estimated policy effects**. Example parameter values illustrate model structure and must be replaced or justified before policy scenarios are interpreted.
+- [Data dictionary — Excel](Harris_County_Model_Data_Dictionary.xlsx), [readable entries](documentation/Model_Data_Dictionary.md), and [CSV](documentation/Model_Data_Dictionary.csv): what each entry means, how it is derived, and what it contributes to the model.
+- [Project overview and model boundary](docs/PROJECT_OVERVIEW.md): research questions, seven subsystems, geography, time horizon, and development milestones.
+- [Comprehensive variable source assessment](reports/source_assessment/Variable_Source_Assessment.md): 62 external source families, 295 assessed entries, and all 24 major mind-map branches.
+- [Data sources and availability](data/README.md): included inputs, excluded records, provenance, and reuse limits.
+- [Reproducing and validating the release](docs/REPRODUCING.md): a portable check of the distributed files and selected input calculations.
 
-## Explore this repository
+## Current evidence
 
-- [Methods](docs/METHODS.md)
-- [Using the resource](docs/REPRODUCING.md)
-- [Source guide](docs/CODE_MAP.md)
-- [Data sources and availability](data/README.md)
+The case uses a 2024 reference year, historical evidence spanning 2010–2024, and proposed policy scenarios for 2025–2050. The population and housing panel contains 16,725 tract-year records on 2020 census tract geography. Records also cover public program finances and accomplishments, reported flood episodes, climate scenario references, and Census migration and socioeconomic measures.
 
-## Use this resource
+The 30 parameter records contain **26 assumptions, three derived proxies, and one observed value**. Fourteen of the 22 empirical stock initializations remain unavailable; three other stock initializations are explicit accounting assumptions. The separate illustrative profile is a hypothetical program setup. Identifying a potential source does not establish that its data have been acquired or that its variable has been measured.
 
-See [Using this resource](docs/REPRODUCING.md) for the document and template structure. No statistical software is needed to read the materials.
+The model links hazard, community, fiscal, governance, implementation, equity, and land processes. Proposed equation corrections and measurement definitions are marked in the dictionary. They require review and integration into the eventual executable model.
 
-**Scope:** Model design and scenario templates prepared; no calibrated executable simulator.
+## Repository map
 
-## Attribution and use
+| Location | Contents |
+| --- | --- |
+| `documentation/` | Full dictionary, dependencies, source manifest, parameter-to-source map, assumptions, and gaps |
+| `reports/source_assessment/` | Source assessment and variable/mind-map crosswalks |
+| `data/` | Selected aggregate input snapshots and data availability notes |
+| `config/` | Harris County geography, time, currency, and model boundary |
+| `models/` and `docs/MODEL_DESIGN.md` | Earlier architecture and templates, retained for design provenance |
+| `scenarios/` | Current illustrative parameter records and earlier scenario templates |
+| `scripts/` | Portable release validation and dictionary export |
 
-Maintained by [CECREH at Texas Tech University](https://www.depts.ttu.edu/cecreh/). Documentation reviewed September 6, 2026. Cite the repository version you used; see [citation guidance](CITATION.md).
+The research scope is the Vensim model and mind map; the literature-review matrix is a separate project. Correspondence, original collaborator files, survey microdata, parcel/account records, raw downloads, private paths, and workstation files are not distributed. [Known limitations and next development steps](docs/DEVELOPMENT_STATUS.md) explain what remains before simulation.
 
-No reuse license is specified for this repository. Contact CECREH about permissions; source-data terms apply separately.
+Maintained by [CECREH at Texas Tech University](https://www.depts.ttu.edu/cecreh/). See [citation and attribution](CITATION.md), [version history](CHANGELOG.md), and [use conditions](RIGHTS.md). No reuse license has yet been designated.
